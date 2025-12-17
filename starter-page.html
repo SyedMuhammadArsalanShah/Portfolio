@@ -420,7 +420,7 @@
       modal.onclick = e => { if (e.target === modal) { iframe.src = ''; modal.style.display = 'none'; } };
 
       // ===== YouTube Slider =====
-      const YOUTUBE_API_KEY = 'AIzaSyD81p7ZwdlOm1BeaC5ryPBbIZi6UGkTboY';
+      const YOUTUBE_API_KEY = 'AIzaSyAUwbKXxdbZ5OXjp_fjfnFQQtd9evYoZbM';
       const CHANNEL_ID = 'UCr2rECPZXcqSfc11fMVSQiQ';
       async function fetchYouTube() {
         const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=10`);

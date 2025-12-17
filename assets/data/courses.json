@@ -1,0 +1,87 @@
+[
+
+
+
+
+  {
+    "title": "Artificial Intelligence (ML & DL)",
+    "link": "https://github.com/SyedMuhammadArsalanShah/Artificial-Intelligence-NAVTTC/",
+    "icon": "bi-cpu"
+  },
+  
+  {
+    "title": "Flutter Development",
+    "link": "https://github.com/SyedMuhammadArsalanShah/FlutterCourse",
+    "icon": "bi-phone"
+  },
+  {
+    "title": "Java Programming",
+    "link": "https://github.com/SyedMuhammadArsalanShah/Java",
+    "icon": "bi-cup-hot"
+  },
+  {
+    "title": "Android Development",
+    "link": "https://github.com/SyedMuhammadArsalanShah/AndroidCourse",
+    "icon": "bi-android2"
+  },
+  {
+    "title": "Oracle SQL",
+    "link": "https://github.com/SyedMuhammadArsalanShah/OracleSQL_SZIC/",
+    "icon": "bi-database"
+  },
+  {
+    "title": "Python Programming",
+    "link": "https://github.com/SyedMuhammadArsalanShah/PythonCourse",
+    "icon": "bi-filetype-py"
+  },
+  {
+    "title": "Django Framework",
+    "link": "https://github.com/SyedMuhammadArsalanShah/DjangoCourse",
+    "icon": "bi-diagram-3"
+  },
+  {
+    "title": "Git & Version Control",
+    "link": "https://github.com/SyedMuhammadArsalanShah/Git-Course",
+    "icon": "bi-git"
+  },
+    {
+    "title": "Docker Flask CRUD",
+    "link": "https://github.com/SyedMuhammadArsalanShah/Docker_Flask_CRUD_APP",
+    "icon": "bi-cloud"
+  },
+  {
+    "title": "PHP Programming",
+    "link": "https://github.com/SyedMuhammadArsalanShah/PHP-Course24",
+    "icon": "bi-code-slash"
+  },
+  {
+    "title": "Laravel Framework",
+    "link": "https://github.com/SyedMuhammadArsalanShah/LaravelCourse",
+    "icon": "bi-layers"
+  },
+  {
+    "title": "C# Programming",
+    "link": "https://github.com/SyedMuhammadArsalanShah/C-Sharp",
+    "icon": "bi-braces"
+  },
+  {
+    "title": "ASP.NET Core",
+    "link": "https://github.com/SyedMuhammadArsalanShah/ASP.NET-CORE-Course",
+    "icon": "bi-window"
+  },
+  {
+    "title": "ASP.NET MVC",
+    "link": "https://github.com/SyedMuhammadArsalanShah/ASP-With-MVC",
+    "icon": "bi-diagram-2"
+  },
+  {
+    "title": "MySQL",
+    "link": "https://github.com/SyedMuhammadArsalanShah/MySqlCourse",
+    "icon": "bi-hdd-network"
+  },
+  {
+    "title": "Web Designing",
+    "link": "https://github.com/SyedMuhammadArsalanShah/WebDesigningCourse",
+    "icon": "bi-palette"
+  }
+]

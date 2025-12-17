@@ -1,0 +1,963 @@
+[
+  {
+    "id": 1,
+    "name": "HidayahCloud AI Bot",
+    "title": "HidayahCloud AI Bot – Interactive Quran Guidance & AI Responses",
+    "category": "Data Science & AI Projects",
+    "icon": "bi-cpu",
+    "overview": "HidayahCloud AI Bot is a state-of-the-art AI chatbot providing intelligent Quran guidance. It integrates complete Quranic text, translations (Urdu & English), Sudais recitation audio, and AI embeddings + RAG for context-aware responses via FastAPI backend and interactive Discord/WhatsApp frontends.",
+    "date": "December 2025",
+    "client": "Independent Research & Educational Initiative",
+    "website": "https://hidayahcloud-ai-bot-production-api.up.railway.app/docs",
+    "media": [
+      "assets/img/projects/mushaf.png"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "LLM",
+      "RAG",
+      "Embeddings",
+      "NLP",
+      "Discord Bot",
+      "WhatsApp Bot"
+    ],
+    "accordion": [
+      {
+        "title": "Project Overview",
+        "icon": "bi-clipboard-data",
+        "content": "HidayahCloud AI Bot delivers authentic Quranic guidance with AI-powered, context-aware responses. It uses FastAPI backend and interactive Discord/WhatsApp frontends for seamless engagement."
+      },
+      {
+        "title": "AI Pipeline & Architecture",
+        "icon": "bi-diagram-3",
+        "content": "Dataset → Scraping → Text Chunking → Embeddings → RAG → LLM → FastAPI → Discord/WhatsApp Frontend. This ensures vectorized, context-aware AI responses."
+      },
+      {
+        "title": "Technical Challenges & Solution",
+        "icon": "bi-award",
+        "content": "Maintaining theological and contextual accuracy was critical. Solved by semantic embeddings, RAG retrieval, and strict grounding of LLM responses in verified Quranic content."
+      }
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/57WsCkdsa6Q",
+        "poster": "assets/img/portfolio/video-thumb.webp"
+      },
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/Vk5NdphW6Yk",
+        "poster": "assets/img/portfolio/video-thumb.webp"
+      }
+    ],
+    "features": [
+      "Full Quran text + translations (Urdu & English)",
+      "Sudais recitation audio access",
+      "AI-powered context-aware answers",
+      "FastAPI REST endpoints",
+      "Interactive Discord and WhatsApp bot frontends",
+      "Vectorized embeddings for semantic search"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=2"
+    },
+    "links": {
+      "live": "https://discord.gg/X2rVqzuw",
+      "docs": "https://hidayahcloud-ai-bot-production-api.up.railway.app/docs",
+      "github": "https://github.com/SyedMuhammadArsalanShah/hidayahcloud-ai-bot"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Daee Al-Quran AI",
+    "title": "Daee Al-Quran AI – Interactive Quranic Guidance Platform",
+    "category": "Data Science & AI Projects",
+    "icon": "bi-cpu",
+    "overview": "Daee Al-Quran AI is an advanced AI-powered platform delivering authentic Quranic guidance based on the lectures, translations, and notes of Dr. Israr Ahmed. It leverages Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and semantic embeddings to provide accurate, contextual, and real-time responses through a secure, cross-platform Flutter application.",
+    "date": "December 2025",
+    "client": "Independent Research & Educational Initiative",
+    "website": "https://dr-israr-ahmed-ai.vercel.app/",
+    "media": [
+      "assets/img/projects/daee2.jpg",
+      "assets/img/projects/daee.png",
+      "assets/img/projects/daee3.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "LLM",
+      "RAG",
+      "Embeddings",
+      "NLP",
+      "Flutter",
+      "Firebase Firestore"
+    ],
+    "accordion": [
+      {
+        "title": "Project Overview",
+        "icon": "bi-clipboard-data",
+        "content": "Daee Al-Quran AI is a research-driven AI platform that transforms Dr. Israr Ahmed’s lectures into an intelligent conversational assistant. The system ensures authenticity by grounding responses strictly within verified lecture content using RAG-based retrieval."
+      },
+      {
+        "title": "AI Pipeline & Architecture",
+        "icon": "bi-diagram-3",
+        "content": "Dataset → Scraping → Text Chunking → Embeddings → Vector Search → RAG → LLM → FastAPI → Flutter Frontend → Firebase Chat → Firestore Database → Role-Based Authentication."
+      },
+      {
+        "title": "Technical Challenges & Solution",
+        "icon": "bi-award",
+        "content": "The primary challenge was maintaining theological accuracy while using generative AI. This was solved through semantic embeddings, controlled retrieval, and strict grounding of LLM responses in authenticated source material."
+      }
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/Ahnr6r4FSpw",
+        "poster": "assets/img/portfolio/video-thumb.webp"
+      }
+    ],
+    "features": [
+      "Interactive AI chat based on Dr. Israr Ahmed’s lectures",
+      "RAG-powered contextual and authentic responses",
+      "Secure user and admin authentication",
+      "Real-time chat using Firebase Firestore",
+      "Mobile-first cross-platform Flutter application",
+      "Modular and scalable AI backend architecture"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=3"
+    },
+    "links": {
+      "live": "https://dr-israr-ahmed-ai.vercel.app/",
+      "docs": "https://daee-al-quran-ai-api.up.railway.app/docs",
+      "github": "https://github.com/SyedMuhammadArsalanShah/daee-al-quran"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Professional Data Science Projects",
+    "title": "Professional Data Science & Machine Learning Project Collection",
+    "category": "Data Science & AI Projects",
+    "icon": "bi-cpu",
+    "overview": "A curated collection of five end-to-end data science and machine learning projects demonstrating real-world problem solving, statistical analysis, predictive modeling, and data pipeline engineering. These projects are inspired by the Sir Zeeshan Usmani Sahab SkilledScore internship program and collaboration with Ghuftugu Publishers, focusing on churn prediction, sentiment analysis, sales forecasting, fraud detection, and full-stack data analytics pipelines.",
+    "date": "2024",
+    "client": "SkilledScore & Ghuftugu Publishers",
+    "website": "",
+    "media": [
+      "assets/img/projects/ds.jpg"
+    ],
+    "thumbnailMedia": [
+      "assets/img/projects/ds.jpg"
+    ],
+    "techStack": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "XGBoost",
+      "TensorFlow",
+      "ARIMA",
+      "Prophet",
+      "LSTM",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Streamlit",
+      "SQL",
+      "PostgreSQL"
+    ],
+    "accordion": [
+      {
+        "title": "Project Scope",
+        "icon": "bi-diagram-3",
+        "content": "The collection includes five applied projects: Telecom Customer Churn Prediction, Amazon Product Review Sentiment Analysis, Sales Forecasting using Time Series models, Fraud Detection in Financial Transactions, and an End-to-End Data Pipeline for Movie Analytics."
+      },
+      {
+        "title": "Learning & Academic Value",
+        "icon": "bi-mortar-board",
+        "content": "Each project emphasizes data preprocessing, feature engineering, model selection, evaluation metrics, and insight-driven visualization. These projects were inspired by and aligned with Sir Zeeshan Usmani Sahab's SkilledScore internship program and Ghuftugu Publishers, making the collection suitable for academic instruction, NAVTTC-style training, and applied industry learning."
+      },
+      {
+        "title": "Technical Depth",
+        "icon": "bi-cpu",
+        "content": "Projects demonstrate classical and advanced ML techniques including Logistic Regression, Random Forest, Naive Bayes, XGBoost, ARIMA, Prophet, LSTM, handling imbalanced datasets with SMOTE, and building SQL-backed analytical pipelines with dashboards."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Customer churn prediction modeling",
+      "Sentiment analysis on large-scale text data",
+      "Time series forecasting with ARIMA, Prophet, and LSTM",
+      "Fraud detection using supervised learning",
+      "End-to-end data pipeline design",
+      "Data visualization and dashboarding",
+      "Well-documented, reproducible workflows",
+      "Aligned with Sir Zeeshan Usmani Sahab SkilledScore internship program and Ghuftugu Publishers collaboration"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=1"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/Professional-Data-Science-Projects-SMASB/"
+    }
+  },
+  {
+    "id": 3,
+    "name": "E-commerce",
+    "title": "E-commerce Website – Junaid Jamshed Inspired Web Clone",
+    "category": "Web App",
+    "icon": "bi-code",
+    "overview": "A static e-commerce website developed using HTML, CSS, JavaScript, and Bootstrap, inspired by the Junaid Jamshed brand. The project showcases stitched, unstitched, fragrances, and kids garments sections. This was my first complete web project, developed during my early learning phase at Eureka, focusing on layout structuring, UI consistency, and responsive design fundamentals.",
+    "date": "2018",
+    "client": "Academic Project (Eureka – First Web Development Project)",
+    "website": "https://syedmuhammadarsalanshah.github.io/JunaidJamshed/",
+    "media": [
+      "assets/img/projects/ecommerce.jpg"
+    ],
+    "thumbnailMedia": [
+      "assets/img/portfolio/ecommerce_thumb.png"
+    ],
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap 5"
+    ],
+    "accordion": [
+      {
+        "title": "Project Background",
+        "icon": "bi-journal-text",
+        "content": "This project was developed as my first hands-on web development assignment at Eureka. The goal was to understand real-world website structure by cloning a well-known Pakistani fashion brand."
+      },
+      {
+        "title": "Functional Sections",
+        "icon": "bi-layout-text-window",
+        "content": "The website includes stitched and unstitched garments, fragrances, and kids wear sections, each designed as individual UI fragments for better layout organization."
+      },
+      {
+        "title": "Learning Outcomes",
+        "icon": "bi-mortarboard",
+        "content": "Strengthened fundamentals of HTML structure, CSS styling, Bootstrap grids, basic JavaScript interactions, and responsive web design concepts."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Brand-inspired UI layout",
+      "Stitched & unstitched collections",
+      "Fragrances and kids garments sections",
+      "Bootstrap-based responsive design",
+      "Clean navigation structure"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=4"
+    },
+    "links": {
+      "live": "https://syedmuhammadarsalanshah.github.io/JunaidJamshed/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/junaidjamshed"
+    }
+  },
+  {
+    "id": 4,
+    "name": "أصوات القرآن – Quran Voices",
+    "title": "أصوات القرآن – Quran Voices",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-soundwave",
+    "overview": "Quran Voices is a lightweight and elegant Kivy-based mobile application that enables verse-level Quran audio playback. Users can select their preferred reciter, browse Surahs, and listen to individual Ayahs with accurate Arabic text rendering, providing a smooth and spiritually engaging listening experience.",
+    "date": "October 2024",
+    "client": "Personal & Educational Project",
+    "website": "",
+    "media": [
+      "assets/img/projects/QV.png"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Python",
+      "Kivy",
+      "Quran Cloud API",
+      "Requests",
+      "Playsound",
+      "Arabic Reshaper",
+      "Python-Bidi",
+      "Multithreading"
+    ],
+    "accordion": [
+      {
+        "title": "Project Overview",
+        "icon": "bi-clipboard-data",
+        "content": "Quran Voices is a mobile-focused Quran listening application built with Kivy. It allows users to select a reciter, browse Surahs, and play verse-level audio while ensuring accurate Arabic text rendering for a clean and distraction-free experience."
+      },
+      {
+        "title": "App Flow & Architecture",
+        "icon": "bi-diagram-3",
+        "content": "Splash Screen → Reciter Selection → Surah List → Verse-Level Audio Screen → Threaded Audio Playback. The architecture focuses on simplicity, responsiveness, and smooth user interaction on mobile devices."
+      },
+      {
+        "title": "Technical Challenges & Solutions",
+        "icon": "bi-award",
+        "content": "The main challenge was displaying Arabic text correctly and managing audio playback without freezing the UI. This was solved using arabic_reshaper with bidi support and running audio playback in a separate thread."
+      }
+    ],
+    "videos": [
+      {
+        "type": "mp4",
+        "src": "assets/video/quranVoices.mp4",
+        "poster": "assets/img/projects/QV.png"
+      }
+    ],
+    "features": [
+      "Verse-level Quran audio playback",
+      "Multiple reciter selection (e.g. Sudais)",
+      "Clean and responsive mobile UI",
+      "Splash screen with Quran branding",
+      "Accurate Arabic text rendering",
+      "Non-blocking audio playback using threading"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=5"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/QuranVoices/"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Hidayah Cloud",
+    "title": "Hidayah Cloud – Authentic Islamic Knowledge & AI-Powered Qur’an Guidance",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-soundwave",
+    "overview": "Hidayah Cloud is a faith-centered digital platform designed to deliver authentic Islamic knowledge through modern technology. It integrates Qur’an, Hadith, and AI-powered guidance to help seekers access verified Islamic content anytime, anywhere, while maintaining spiritual integrity, scholarly grounding, and a clean user experience.",
+    "date": "2020-2025",
+    "client": "Independent Islamic Research & Educational Initiative",
+    "website": "https://hidayahcloud.vercel.app/",
+    "media": [
+      "assets/img/projects/HC.png"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "FastAPI",
+      "REST APIs",
+      "UI/UX Design",
+      "Islamic Knowledge Systems"
+    ],
+    "accordion": [
+      {
+        "title": "Platform Vision",
+        "icon": "bi-lightbulb",
+        "content": "Hidayah Cloud aims to bridge Islam and modern technology by making authentic Qur’anic and Sunnah-based knowledge accessible through carefully designed digital experiences rooted in sincerity and trust."
+      },
+      {
+        "title": "Core Offerings",
+        "icon": "bi-journal-text",
+        "content": "The platform hosts multiple Islamic applications including Quran & Hadith explorers, audio Qur’an experiences, React-based Mushaf tools, and AI-assisted guidance systems designed for learning, reflection, and spiritual growth."
+      },
+      {
+        "title": "AI & Automation Integration",
+        "icon": "bi-cpu",
+        "content": "Hidayah Cloud extends into AI-powered bots for Discord and WhatsApp, providing context-aware Qur’anic guidance, authentic Urdu and English translations, Sudais recitations, semantic ayah search, and FastAPI-driven backend services."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Authentic Qur’an and Hadith access",
+      "AI-powered contextual Islamic guidance",
+      "Clean, distraction-free UI/UX",
+      "Responsive web experience",
+      "Cross-platform AI bot integrations",
+      "Scholarly grounded content delivery"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=6"
+    },
+    "links": {
+      "live": "https://hidayahcloud.vercel.app/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/HidayahCloud"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mushaf Cloud",
+    "title": "Mushaf Cloud – Multilingual Quran App with Tafsir & High-Quality Audio",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-soundwave",
+    "overview": "Mushaf Cloud is a comprehensive Quran application providing access to the Holy Quran with translations and tafsirs in 40 languages, combined with high-quality audio recitations from renowned Qaris. The app supports offline audio downloads, Ayah sharing, customizable fonts, and a clean, responsive user interface designed for deep reflection and ease of use.",
+    "date": "2023",
+    "client": "Educational & Islamic Learning Initiative",
+    "website": "https://mushafcloud.vercel.app/",
+    "media": [
+      "assets/img/MushafCloud.png"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Flutter",
+      "Quran Cloud API",
+      "Just Audio",
+      "Dio",
+      "Path Provider",
+      "Google Fonts",
+      "REST APIs"
+    ],
+    "accordion": [
+      {
+        "title": "Application Overview",
+        "icon": "bi-clipboard-data",
+        "content": "Mushaf Cloud offers a complete Quran reading and listening experience, featuring the Arabic Quran alongside 134 translations and tafsirs in 40 languages, with intuitive navigation and a distraction-free interface."
+      },
+      {
+        "title": "Audio & Offline Capabilities",
+        "icon": "bi-volume-up",
+        "content": "The app integrates 20 renowned reciters with high-quality audio playback. Users can stream or download Ayah audio for offline use using Just Audio, Dio, and Path Provider, ensuring uninterrupted access to recitation anytime."
+      },
+      {
+        "title": "Sharing & Customization",
+        "icon": "bi-share",
+        "content": "Users can share Ayah text or downloaded audio directly via social platforms. The app also supports customizable typography using Google Fonts, enhancing readability and personalization."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "134 translations and tafsirs in 40 languages",
+      "20 high-quality Quran reciters",
+      "Offline audio download support",
+      "Ayah text and audio sharing",
+      "Custom fonts using Google Fonts",
+      "Responsive and user-friendly UI"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=7"
+    },
+    "links": {
+      "live": "https://mushafcloud.vercel.app/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/mushafcloud"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Islamic Vision",
+    "title": "Islamic Vision – Quran & Hadith Explorer",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-soundwave",
+    "overview": "Islamic Vision is a cross-platform Flutter application designed to provide authentic access to the Qur’an and Hadith. Developed under academic supervision at Sheikh Zayed Islamic Center, University of Karachi, the app offers multilingual Quran translations, tafsir, high-quality recitations, and a comprehensive Hadith module with advanced search and sharing features.",
+    "date": "November 2023 – December 2023",
+    "client": "Sheikh Zayed Islamic Center, University of Karachi",
+    "website": "http://islamicvision.vercel.app/",
+    "media": [
+      "assets/img/projects/hadith.jpg",
+      "assets/img/projects/iv.png"
+    ],
+    "thumbnailMedia": [
+      "assets/img/projects/iv.png"
+    ],
+    "techStack": [
+      "Flutter",
+      "API-based Architecture",
+      "Google Fonts",
+      "REST APIs",
+      "Cross-Platform Mobile Development"
+    ],
+    "accordion": [
+      {
+        "title": "Quran Module",
+        "icon": "bi-book",
+        "content": "Provides 134 translations and tafsirs in over 40 languages, 20 high-quality reciters, offline audio downloads, ayah search with highlights, sharing features, and customizable fonts using Google Fonts."
+      },
+      {
+        "title": "Hadith Module",
+        "icon": "bi-journal-text",
+        "content": "Includes search by Hadith number, Arabic text, Urdu, and English across nine authentic Hadith collections including Bukhari, Muslim, Tirmidhi, Abu Dawood, Ibn Majah, Nasa’i, Mishkat, Musnad Ahmad, and Al-Silsilah al-Sahihah."
+      },
+      {
+        "title": "Academic & Technical Highlights",
+        "icon": "bi-mortarboard",
+        "content": "Developed as an academic project with a clean, responsive UI, multilingual support (Arabic, Urdu, English), Urdu keyboard for Quranic search, and optimized performance through API-based architecture."
+      }
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/SVu7d4OCWQM",
+        "poster": "assets/img/projects/iv.png"
+      }
+    ],
+    "features": [
+      "Quran with 134 translations & tafsir",
+      "20 high-quality Quran reciters",
+      "Offline audio download",
+      "Advanced Quran & Hadith search",
+      "Nine authentic Hadith collections",
+      "Ayah sharing to social platforms",
+      "Custom fonts using Google Fonts",
+      "Clean, modern, and responsive UI"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=8"
+    },
+    "links": {
+      "live": "http://islamicvision.vercel.app/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/IslamicVision"
+    }
+  },
+  {
+    "id": 8,
+    "name": "القرآن الكريم بصوت العفاسي (Al-Quran Al-Kareem Bi Sawt Al-Afasy)",
+    "title": "Al-Quran Al-Kareem – Full Quran Audio Player",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-soundwave",
+    "overview": "Complete Quran audio player featuring Mishary Rashid Alafasy recitation, built in Flutter.",
+    "date": "2024",
+    "client": "Personal / Educational",
+    "website": "https://quran-affasy.vercel.app/",
+    "media": [
+      "assets/img/projects/quran.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Flutter",
+      "Audio Streaming",
+      "UI/UX"
+    ],
+    "accordion": [],
+    "videos": [],
+    "features": [
+      "Full Quran audio",
+      "Clean and modern UI",
+      "Surah and verse-level playback",
+      "Custom playlist and bookmarks"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=10"
+    },
+    "links": {
+      "live": "https://quran-affasy.vercel.app/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/Al-Quran-Al-Kareem-Bi-Sawt-Al-Affasy"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Sunnah Vision – Hadith App",
+    "title": "Hadith App – Comprehensive Hadith Collection",
+    "category": "Islamic Tech Innovation",
+    "icon": "bi-bookmarks",
+    "overview": "A fully searchable and categorized Hadith application built with Flutter, featuring Arabic, Urdu, and English text across major authentic collections.",
+    "date": "2025",
+    "client": "Educational",
+    "website": "https://sunnahvision.vercel.app/",
+    "media": [
+      "assets/img/projects/b3.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Flutter",
+      "Mobile Development",
+      "UI/UX"
+    ],
+    "accordion": [
+      {
+        "title": "Hadith Module",
+        "icon": "bi-journal-text",
+        "content": "Includes search by Hadith number, Arabic text, Urdu, and English across nine authentic Hadith collections including Bukhari, Muslim, Tirmidhi, Abu Dawood, Ibn Majah, Nasa’i, Mishkat, Musnad Ahmad, and Al-Silsilah al-Sahihah."
+      }
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/usfT19O9TxI",
+        "poster": "assets/img/projects/hadith.jpg"
+      }
+    ],
+    "features": [
+      "Search Hadith",
+      "Categorized Collections",
+      "Favorites & Bookmarks",
+      "Multi-language Support (Arabic, Urdu, English)"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=11"
+    },
+    "links": {
+      "live": "https://sunnahvision.vercel.app/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/HadithApplication"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Course API",
+    "title": "Course API – Academic Course Management Backend",
+    "category": "Mobile App",
+    "icon": "bi-stack",
+    "overview": "Java & Android-based REST API for managing courses, students, and academic progress. Integrated with Firebase for real-time data storage, student tracking, and cloud authentication. GitHub repositories used for version control and collaboration.",
+    "date": "2021",
+    "client": "Aptech Students",
+    "website": "",
+    "media": [
+      "assets/img/projects/course_api.png"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Java",
+      "Android",
+      "Firebase",
+      "GitHub"
+    ],
+    "accordion": [],
+    "videos": [],
+    "features": [
+      "Course CRUD",
+      "Student tracking",
+      "Firebase Authentication",
+      "GitHub Repo Integration"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=12"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/SMArsalanShahEIT"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Google Maps Integration",
+    "title": "Google Maps Integration – Flutter Mapping Module",
+    "category": "Mobile App",
+    "icon": "bi-stack",
+    "overview": "Custom Google Maps integration in Flutter with markers, interactions, and map controls for mobile applications.",
+    "date": "2023",
+    "client": "Flutter Development",
+    "website": "",
+    "media": [
+      "assets/img/projects/maps.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "Google Maps Flutter Plugin"
+    ],
+    "accordion": [
+      {
+        "title": "Integration Overview",
+        "icon": "bi-clipboard-data",
+        "content": "Implemented interactive Google Maps features in Flutter including marker placement, custom info windows, zoom controls, and map gestures for mobile apps."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Interactive markers",
+      "Zoom & pan controls",
+      "Custom info windows",
+      "Flutter-friendly integration"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=13"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/FlutterCourse/tree/master/FlutterCourseSecondary2023/lecture30google_map_api"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Foodie App",
+    "title": "Foodie App – Full-Stack Food Delivery Mobile App",
+    "category": "Mobile App",
+    "icon": "bi-stack",
+    "overview": "A full-featured food delivery mobile application built with Java and Firebase, enabling users to browse restaurants, discover dishes, place orders, and share reviews, inspired by apps like Food Panda. Developed as an FYP under the NAVTTC program at IBA University.",
+    "date": "2025",
+    "client": "IBA University / NAVTTC Program",
+    "website": "",
+    "media": [
+      "assets/img/projects/foodie.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Java",
+      "Firebase",
+      "Android Studio",
+      "Realtime Database",
+      "Cloud Firestore",
+      "Authentication",
+      "Push Notifications"
+    ],
+    "accordion": [
+      {
+        "title": "System Overview",
+        "icon": "bi-clipboard-data",
+        "content": "Foodie App allows users to browse restaurants, view menus, place orders, track delivery status, and leave reviews. The backend is powered by Firebase Realtime Database and Cloud Firestore, ensuring real-time updates and secure data management."
+      },
+      {
+        "title": "Academic & Industry Value",
+        "icon": "bi-mortarboard",
+        "content": "This project demonstrates practical mobile development, full-stack integration, and real-world application workflows. It serves as a capstone project for the NAVTTC program and provides a strong portfolio piece for career opportunities in Android app development."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Restaurant browsing and dish discovery",
+      "Order placement and tracking",
+      "User authentication and profile management",
+      "Reviews and ratings",
+      "Real-time updates via Firebase",
+      "Push notifications for order status"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=14"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/Foodieapp"
+    }
+  },
+  {
+    "id": 14,
+    "name": "LaravelQuranAPI",
+    "title": "LaravelQuranAPI – RESTful Quran Data Service",
+    "category": "API",
+    "icon": "bi-server",
+    "overview": "A developer-friendly RESTful API delivering comprehensive Quranic text, translations, tafsirs, and audio from top reciters. Supports multi-language translations and offers a robust backend for Islamic apps and educational projects.",
+    "date": "2023",
+    "client": "Developers / Education",
+    "website": "",
+    "media": [
+      "assets/img/projects/quran-api.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "JavaScript",
+      "PHP",
+      "Laravel",
+      "REST API",
+      "Quran Cloud API"
+    ],
+    "accordion": [
+      {
+        "title": "Key Features",
+        "icon": "bi-clipboard-data",
+        "content": "Top 20 Quran Reciters, 134 Quran Translations & Tafsirs in 40 languages, optimized for easy integration in web and mobile apps."
+      },
+      {
+        "title": "Languages Supported",
+        "icon": "bi-globe",
+        "content": "Arabic (20), English (19), Persian (14), Russian (10), Turkish (10), Urdu (9), German (4), Spanish (4), Dutch (3), Indonesian (3), Albanian (3), Bengali (2), Azerbaijani (2), Czech (2), Malayalam (2), French (2), Hindi (2), Italian (1), Japanese (1), Korean (1), Kurdish (1), Norwegian (1), Polish (1), Pashto (1), Portuguese (1), Romanian (1), Sindhi (1), Somali (1), Swahili (1), Swedish (1), Tamil (1), Tajik (1), Thai (1), Tatar (1), Uyghur (1), Uzbek (1), Amharic (1), Berber (1), Dhivehi (1)."
+      },
+      {
+        "title": "Academic & Industry Value",
+        "icon": "bi-mortarboard",
+        "content": "Demonstrates building a scalable API with Laravel, RESTful design principles, and real-world applicability for Islamic educational tools and apps."
+      }
+    ],
+    "videos": [],
+    "features": [
+      "Quranic text retrieval",
+      "Top reciters' audio",
+      "Multi-language translations and tafsir",
+      "RESTful API for integration",
+      "Scalable and developer-friendly"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=15"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/LaravelQuranAPI"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Hadith Nabawi API",
+    "title": "Hadith Nabawi ﷺ API – RESTful Hadith Data Service",
+    "category": "API",
+    "icon": "bi-server",
+    "overview": "A RESTful API delivering authenticated Hadith collections from 9 major books with full search capabilities. Designed for developers and educational platforms to integrate Hadith content easily into apps or websites.",
+    "date": "2023",
+    "client": "Educational",
+    "website": "",
+    "media": [
+      "assets/img/projects/hadith.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "PHP",
+      "Laravel",
+      "REST API"
+    ],
+    "accordion": [
+      {
+        "title": "Key Features",
+        "icon": "bi-clipboard-data",
+        "content": "Provides REST endpoints for 9 authentic Hadith books with full-text search, filtering by book, chapter, or narration number, enabling easy integration in web and mobile applications."
+      },
+      {
+        "title": "Hadith Collections Included",
+        "icon": "bi-book",
+        "content": "Sahih al-Bukhari, Sahih Muslim, Jami` at-Tirmidhi, Sunan Abu Dawood, Sunan Ibn Majah, Sunan an-Nasa'i, Mishkat al-Masabih, Musnad Ahmad, Al-Silsilah al-Sahihah"
+      },
+      {
+        "title": "Project Demo",
+        "icon": "bi-play-circle",
+        "content": "Watch demo: <iframe width='560' height='315' src='https://www.youtube.com/embed/2Tr39LBCoQA' title='Hadith Nabawi API Demo' frameborder='0' allowfullscreen></iframe>"
+      }
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/2Tr39LBCoQA",
+        "poster": "assets/img/projects/hadith.jpg"
+      }
+    ],
+    "features": [
+      "Searchable Hadith database",
+      "9 authentic Hadith books",
+      "REST API endpoints",
+      "Book/chapter/number filtering",
+      "Developer-friendly integration"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=16"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/HadithNabiAPI"
+    }
+  },
+  {
+    "id": 16,
+    "name": "News API App",
+    "title": "News API Web App",
+    "category": "Web App",
+    "icon": "bi-newspaper",
+    "overview": "Aggregates news via API endpoints.",
+    "date": "2018",
+    "client": "Educational",
+    "website": "https://syedmuhammadarsalanshah.github.io/news/",
+    "media": [
+      "assets/img/projects/news-api.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap 5",
+      "JavaScript",
+      "API"
+    ],
+    "accordion": [],
+    "videos": [],
+    "features": [
+      "News aggregation"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=17"
+    },
+    "links": {
+      "live": "https://syedmuhammadarsalanshah.github.io/news/",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/news"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Library Management System",
+    "title": "Library Management System – Desktop App",
+    "category": "Desktop App",
+    "icon": "bi-shop",
+    "overview": "Java-based system for managing books and students.",
+    "date": "2022",
+    "client": "Educational Institute",
+    "website": "",
+    "media": [
+      "assets/img/projects/school.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Java",
+      "SQL"
+    ],
+    "accordion": [],
+    "videos": [],
+    "features": [
+      "Book management",
+      "Student records"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=18"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/Library-Management-System"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Restaurant Management System",
+    "title": "Restaurant Management System – POS Desktop App",
+    "category": "Desktop App",
+    "icon": "bi-shop",
+    "overview": "POS and inventory system for restaurants.",
+    "date": "2021",
+    "client": "Hospitality",
+    "website": "",
+    "media": [
+      "assets/img/projects/restaurant.jpg"
+    ],
+    "thumbnailMedia": [],
+    "techStack": [
+      "Java",
+      "POS System"
+    ],
+    "accordion": [],
+    "videos": [],
+    "features": [
+      "Billing",
+      "Inventory"
+    ],
+    "nextProject": {
+      "title": "Next Project",
+      "link": "portfolio-details.html?id=19"
+    },
+    "links": {
+      "live": "",
+      "docs": "",
+      "github": "https://github.com/SyedMuhammadArsalanShah/JavaPOS"
+    }
+  }
+]

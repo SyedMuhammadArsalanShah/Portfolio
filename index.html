@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +14,7 @@
     content="Syed Muhammad Arsalan Shah, SMAS, Islamic App Developer, Mushaf Cloud, Quran Voices, Data Scientist Pakistan, Flutter Developer, Mobile App Instructor, Portfolio" />
   <meta name="author" content="Syed Muhammad Arsalan Shah" />
   <meta name="robots" content="index, follow" />
-<meta name="google-site-verification" content="KGWmkv0CQcHNububBhLYP16L1EPgvn3QlACjC2-OlCw" />
+  <meta name="google-site-verification" content="KGWmkv0CQcHNububBhLYP16L1EPgvn3QlACjC2-OlCw" />
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:title" content="Syed Muhammad Arsalan Shah | SMAS Portfolio" />
@@ -47,18 +48,17 @@
     ]
   }
   </script>
-</head>
 
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -71,6 +71,10 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+
 
   <style>
     @font-face {
@@ -79,75 +83,7 @@
       font-weight: normal;
       font-style: normal;
     }
-
-    /* body {
-      font-family: 'Jameel', sans-serif;
-    } */
-
-    .testimonial-content,
-    .testimonial-content h3 a {
-      font-family: 'Jameel', sans-serif;
-    }
-
-    .testimonial-content h4 {
-      font-family: 'Jameel', sans-serif;
-    }
-
-    .testimonial-item {
-      margin-bottom: 20px;
-    }
-
-    .quote-icon-right,
-    .quote-icon-left {
-      font-size: 1.5rem;
-    }
-
-    .stars i {
-      color: #FFD700;
-    }
-
-    .testimonial-img {
-      width: 200px;
-      height: auto;
-      border-radius: 50%;
-      border: 2px solid #ddd;
-    }
-
-
-
-    #courses {
-      margin-top: -100px;
-      margin-bottom: -80px;
-    }
-
-    .list-group-item a {
-      color: #00796b;
-      text-decoration: none;
-      display: block;
-      padding: 10px 15px;
-      transition: all 0.3s ease;
-      border-radius: 5px;
-    }
-
-    .list-group-item a:hover {
-      color: #ffffff;
-      background-color: #00796b;
-      text-decoration: none;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      /* Subtle box shadow */
-    }
-
-    @font-face {
-      font-family: "jameel";
-      src: url("assets/fonts/jameel.ttf") format("truetype");
-    }
-
-    .custom-font {
-      font-family: "jameel", serif;
-    }
   </style>
-
-
 
 
 
@@ -155,53 +91,161 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <!-- <h1 class="sitename">Style</h1>  -->
+      </a>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#courses"><i class="bi bi-card-checklist navicon"></i><span>Courses</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
+      <nav id="navmenu" class="navmenu">
 
+        <div class="profile-img">
+          <img src="assets/img/profile/profile.jpeg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/profile/profile3.jpg" alt=""> -->
+          <h1 class="sitename">Syed M Arsalan Shah</h1>
+        </a>
+
+        <div class="social-links text-center">
+
+          <a href="https://www.linkedin.com/in/syedmuhammadarsalanshah/" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.whatsapp.com/channel/0029VaCr8pqDZ4LZ1Fo46N1d/" target="_blank"><i
+              class="bi bi-whatsapp"></i></a>
+          <a href="https://www.youtube.com/@syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://web.facebook.com/SyedMuhammadArsalanShahBukhari/" target="_blank"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/syedmuhammadarsalanshahbukhari/" target="_blank"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/SMArsalanShah"><i class="bi bi-twitter-x"></i></a>
+
+        </div>
+
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg111.jpg" alt="Syed Muhammad Arsalan Shah Profile Image">
+      <div class="container">
+        <div class="row g-0 align-items-center">
 
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>S M Arsalan Shah</h2>
-            <p>I'm <span class="typed"
-                data-typed-items="Data Scientist ,Instructor , Freelancer,Motivational Speaker , IT Engineer , Data Analyst">Designer</span><span
-                class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/syedmuhammadarsalanshah/" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
-              <a href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.whatsapp.com/channel/0029VaCr8pqDZ4LZ1Fo46N1d/" target="_blank"><i
-                  class="bi bi-whatsapp"></i></a>
-              <a href="https://www.youtube.com/@syedmuhammadarsalanshah/" target="_blank"><i
-                  class="bi bi-youtube"></i></a>
-              <a href="https://web.facebook.com/SyedMuhammadArsalanShahBukhari/" target="_blank"><i
-                  class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/syedmuhammadarsalanshahbukhari/" target="_blank"><i
-                  class="bi bi-instagram"></i></a>
-              <a href="https://twitter.com/SMArsalanShah"><i class="bi bi-twitter-x"></i></a>
+          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+            <div class="content-wrapper">
+              <h1 class="hero-title">Visionary <span class="typed"
+                  data-typed-items="Data Scientist, Islamic Tech Innovator, Instructor, Freelancer, Motivational Speaker, IT Engineer, Data Analyst, Designer"></span>
+              </h1>
+              <p class="lead">
+
+                I craft digital experiences that inspire and empower. With a focus on innovative Islamic tech solutions,
+                clean design, and functional excellence, I transform ideas into meaningful, impactful realities.
+              </p>
+
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1422"
+                    data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Courses & Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="8"
+                    data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2001"
+                    data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Students & Clients </span>
+                </div>
+              </div>
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
+
+              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.linkedin.com/in/syedmuhammadarsalanshah/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+                <a href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i
+                    class="bi bi-github"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029VaCr8pqDZ4LZ1Fo46N1d/" target="_blank"><i
+                    class="bi bi-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@syedmuhammadarsalanshah/" target="_blank"><i
+                    class="bi bi-youtube"></i></a>
+                <a href="https://web.facebook.com/SyedMuhammadArsalanShahBukhari/" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/syedmuhammadarsalanshahbukhari/" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/SMArsalanShah"><i class="bi bi-twitter-x"></i></a>
+
+              </div>
             </div>
           </div>
+
+          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <div class="floating-elements">
+
+                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="bi bi-megaphone"></i>
+                  <span>Motivational Speaking & Mentorship</span>
+                </div>
+                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-stack"></i>
+                  <span>Islamic Tech Innovation</span>
+                </div>
+                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-cpu"></i>
+                  <span>Data Science & AI / Software Engineering</span>
+                </div>
+              </div>
+
+              <img src="assets/img/profile/profile1.jpg" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -211,245 +255,704 @@
     <section id="about" class="about section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>About</h2>
-        <p><strong>Assalam U Alaikum! 👋 <br>
-
-            I am Syed Muhammad Arsalan Shah.<br>
-          </strong>
-
-          I am an IT instructor at Aptech Gulshan II, where I teach a variety of technical skills. My educational
-          journey includes a Data Analytics course, a three-year Diploma in IT, and a one-year course in Application
-          Development. I am currently pursuing a BS in Islamic Studies with Computer Technology, while also completing
-          my 8th year in the Aalim course.</p>
+        <p>Building knowledge, inspiring others, and innovating through technology and Islamic solutions</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile.jpeg" class="img-fluid" alt="Syed Muhammad Arsalan Shah Profile Image">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Motivational Speaker & IT Engineer </h2>
-            <p class="fst-italic py-3">
-              Motivational Speaker | Developer | IT Engineer | Data Analyst | Python Developer | Flutter Developer
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span></span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>ReadOnly:</strong><span><a
-                        href="https://syedmuhammadarsalanshah.github.io/SMASB/" target="blank">Resume_click
-                        here</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+92 303 2006225</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Karachi, Pakistan</span></li>
-                </ul>
+        <div class="row align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="assets/img/profile/profile.jpeg" alt="Profile Syed Muhammad Arsalan Shah" class="img-fluid">
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>smarsalanshah125@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+              <div class="signature-section">
+                <p class="signature-text"
+                  style="font-family: 'Aref Ruqaa', cursive; font-size: 1.5rem; color: #065cc2; line-height: 1.6;">
+                  وقتِ فُرصت ہے کہاں، کام ابھی باقی ہے<br>
+                  نُورِ توحید کا اِتمام ابھی باقی ہے
+                </p>
+                <!-- Profile Badge -->
+                <div class="profile-badge mt-3">
+                  <img
+                    src="https://visitor-badge.laobi.icu/badge?page_id=SyedMuhammadArsalanShah.SyedMuhammadArsalanShah"
+                    alt="Profile visitor count" />
+                </div>
+                <img
+                  src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
+                  alt="I Stand With Palestine" style="max-width:100%; height:auto;">
+
+                <p class="quote" style="font-family: 'Scheherazade', sans-serif; font-size: 1rem;">
+                  Guiding and empowering hearts and minds with knowledge, technology, and the light of the Qur’an and
+                  Sunnah in service of the Ummah.
+                </p>
               </div>
+
             </div>
-            <p class="py-3">
-
-              I am Syed Muhammad Arsalan Shah, an <strong>IT Instructor</strong> at <strong>Aptech Gulshan II</strong>
-              with a strong
-              passion for teaching and learning. I hold a three-year <strong> Diploma in IT</strong> from
-              <strong>Eureka</strong>, a
-              one-year <strong>Application Development course</strong> from <strong>IBA City Campus</strong>, and a
-              <strong>Data
-                Analyst</strong>
-              certification from
-              <strong>NED University</strong>. Currently, I am pursuing a BS in <strong>Islamic Studies with Computer
-                Technology</strong> from <strong>Karachi University</strong>, alongside my 8th year in the <strong>Aalim
-                course</strong> at <strong>Jamia Tul Imam Nouman Bin Sabit</strong>.
-
-            </p>
-            <p>
-              My focus is on empowering others in the IT industry and using my skills to benefit the Muslim community.
-              Let's connect and collaborate on impactful projects!
-            </p>
           </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="intro">
+                <h2>Hi, I'm Syed Muhammad Arsalan Shah Bukhari</h2>
+                <p>
+                  I currently teach at <strong>MITI</strong> and <strong>Aptech Gulshan I & II</strong>, and have served
+                  as a
+                  <strong>Visiting Instructor under NAVTTC</strong>, delivering training in Data Science, AI, Machine
+                  Learning, Deep Learning, and software development.
+                  I also innovate in Islamic technology, developing AI-powered platforms like the <strong>Hidayah
+                    Cloud</strong> ecosystem,
+                  and motivate and inspire others through speaking engagements focused on learning, purpose, and
+                  personal growth.
+                </p>
+
+                <p>
+                  I have completed a <strong>BS in Islamic Studies with Computer Technology</strong> and the
+                  <strong>Aalim Course (Master’s-equivalent in Islamic Studies)</strong>, a <strong>three-year IT
+                    Diploma from Eureka</strong>, a <strong>CIT(Web & Application Development) program from IBA Center
+                    for
+                    Information Technology (CIT)</strong>, and a <strong>Data Analyst certification from NED
+                    University</strong>.
+                </p>
+                <p>
+                  My Data Science skills are primarily built through hands-on learning on <strong>Kaggle</strong>,
+                  complemented by the <strong>IBM Data Science Professional Certificate</strong>, mentorship under
+                  <strong>Dr. Zeeshan-ul-Hassan Usmani</strong>, and additional courses from <strong>GeeksforGeeks,
+                    CodeWithHarry, and Apna College</strong>. I actively maintain practical projects on
+                  <strong>GitHub</strong>, applying real-world solutions.
+                </p>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="skill-icon">
+                    <i class="bi bi-cpu"></i>
+                  </div>
+                  <h4>Data Science & AI</h4>
+                  <p>Kaggle, IBM Certificate, real-world AI & ML applications</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="skill-icon">
+                    <i class="bi bi-stack"></i>
+                  </div>
+                  <h4>Islamic Tech Innovation</h4>
+                  <p>Hidayah Cloud & AI-powered spiritual platforms</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="skill-icon">
+                    <i class="bi bi-gear"></i>
+                  </div>
+                  <h4>Software Engineering</h4>
+                  <p>IBA CIT, Eureka IT, practical projects on GitHub</p>
+                </div>
+              </div>
+              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item d-flex align-items-center mb-4">
+                  <div class="year me-3">
+                    <i class="bi bi-book-half" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="description">
+                    <strong>Islamic Tech Innovation & Education:</strong> Completed BS in Islamic Studies with Computer
+                    Technology & Aalim Course (Master’s-equivalent); teaching at MITI & Aptech; developing AI-powered
+                    platforms like Hidayah Cloud.
+                  </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item d-flex align-items-center mb-4">
+                  <div class="year me-3">
+                    <i class="bi bi-bar-chart-line" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="description">
+                    <strong>Data Science & AI:</strong> Hands-on learning on Kaggle, IBM Data Science Professional
+                    Certificate, and real-world AI projects.
+                  </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item d-flex align-items-center mb-4">
+                  <div class="year me-3">
+                    <i class="bi bi-laptop" style="font-size: 2.5rem;"></i>
+                  </div>
+                  <div class="description">
+                    <strong>Education & Software Engineering:</strong> Completed IT Diploma from Eureka & IT program
+                    from IBA CIT; built practical projects on GitHub.
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="fun-fact">
+                  <span class="emoji">🌙</span>
+                  <span class="text">Driven by knowledge, teaching, and serving the Ummah with sincerity</span>
+                </div>
+
+                <div class="action-buttons">
+                  <a href="#portfolio" class="btn btn-primary">
+
+                    View My Work</a>
+                  <a href="assets/Resume/RESUME.pdf" target="_blank" class="btn btn-outline">
+                    <i class="bi bi-download" style="margin-right: 8px; font-size: 1.2rem;"></i> Download Resume
+
+                  </a>
+                  <a href="https://syedmuhammadarsalanshah.github.io/SMASB/" target="_blank" class="btn btn-outline">
+                    Read Only Resume
+
+
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
-
+    </section>
+    <!-- /About Section -->
 
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Showcasing Proven Expertise and Adaptable Skills to Foster Growth and Achieve Excellence</p>
-      </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="conatiner ">
-          <div class="row skills-content skills-animation">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="skills-grid">
+              <div class="row g-4">
 
-            <div class="col-lg-6 col-sm-12">
-
-              <div class="progress">
-                <span class="skill"><span>Flutter | Dart</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+                <!-- Data Science & AI (Tech Preference) -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="150">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-cpu"></i>
+                      <h3>Data Science & AI</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Python</span><span
+                            class="skill-percentage">95%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Machine Learning</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Deep Learning</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Generative AI</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Artificial Intelligence Engineering
+                            Stack</span><span class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Natural Language Processing</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Exploratory Data Analysis</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">R</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Power BI</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Tableau</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Web Scraping</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
 
-              <div class="progress">
-                <span class="skill"><span>Power BI | TABLEAU</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+                <!-- Frontend Development -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-code-slash"></i>
+                      <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Bootstrap</span><span
+                            class="skill-percentage">82%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">CSS3</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Dart</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Flutter</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">HTML5</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">JavaScript</span><span
+                            class="skill-percentage">82%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">jQuery</span><span
+                            class="skill-percentage">80%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">MERN</span><span
+                            class="skill-percentage">80%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">React</span><span
+                            class="skill-percentage">80%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>WEB SCRAPING</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+
+                <!-- Backend Development -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="250">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-server"></i>
+                      <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">PHP</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Laravel</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">FastAPI</span><span
+                            class="skill-percentage">92%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="92"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Django</span><span
+                            class="skill-percentage">92%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="92"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Flask</span><span
+                            class="skill-percentage">92%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="92"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Tkinter & Kivy</span><span
+                            class="skill-percentage">92%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="92"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">C#</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">.NET Core MVC</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Java</span><span
+                            class="skill-percentage">95%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">C</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">C++</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>Django | Flask | Tkinter </span> <i class="val">65%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+
+                <!-- Databases -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-database"></i>
+                      <h3>Databases</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Firebase</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Hive Database</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">MongoDB</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">MySQL</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Oracle</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">PostgreSQL</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">SQL</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">SQLAlchemy</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">SQLite</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">SQLite3</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Hadoop</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>Php | Laravel</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+
+                <!-- Cloud & DevOps -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="350">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-cloud"></i>
+                      <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Bitbucket</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Docker</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Git</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">GitHub</span><span
+                            class="skill-percentage">90%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">GitLab</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Large File Storage</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Railway Deployment</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Vercel Deployment</span><span
+                            class="skill-percentage">85%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
 
-              <div class="progress">
-                <span class="skill"><span>Sql | MySql | Oracle | Hadoop</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
+                <!-- Design & Tools -->
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-palette"></i>
+                      <h3>Design & Tools</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Canva</span><span
+                            class="skill-percentage">65%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Figma</span><span
+                            class="skill-percentage">68%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Illustrator</span><span
+                            class="skill-percentage">65%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info"><span class="skill-name">Photoshop</span><span
+                            class="skill-percentage">65%</span></div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div><!-- End Skills Item -->
 
-
-
-              <div class="progress">
-                <span class="skill"><span>Java</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Git | Github | lfs | kaggle</span> <i class="val">85%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-
+              </div>
             </div>
-
-            <div class="col-lg-6 col-sm-12">
-
-              <div class="progress">
-                <span class="skill"><span>Firebase | SQLite | HiveDatabase |MongoDB</span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Python </span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>AI | ML | DL | NLP</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>NUMPY | PANDAS | SEABORN | MATPLOTLIB</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>C# | .Net Core MVC</span> <i class="val">65%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>HTML5 | CSS3 | JS | Bootstrap | jquery</span> <i class="val">75%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>C | C++</span> <i class="val">65%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-
-
-              <div class="progress">
-                <span class="skill"><span>Canva | Figma | Illustrator | Photoshop</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap" style="border-radius: 10px; overflow: hidden;">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
-                    style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div><!-- End Skills Item -->
-            </div>
-
           </div>
+
+          <div class="col-lg-4">
+            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
+              <h3>Professional Expertise</h3>
+              <p>
+                Visiting Instructor delivering training in Data Science, AI, Machine Learning, Deep Learning, and
+                software development. Islamic tech innovator, creator of AI-powered platforms like Hidayah Cloud, and
+                speaker on learning, purpose, and personal growth.
+              </p>
+              <p>
+                Advanced Data Science skills honed via Kaggle, IBM Data Science Professional Certificate, mentorship,
+                and top online courses. Maintains impactful real-world projects on GitHub.
+              </p>
+
+
+
+              <div class="summary-stats">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="stat-circle">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years Experience</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-circle">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">1447</span>
+                    <span class="stat-label">Courses & Projects</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-circle">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">2001</span>
+                    <span class="stat-label">Students & Clients</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
+                <h4>Certifications & Achievements</h4>
+                <div class="badge-list">
+                  <div class="skill-badge">Islamic Tech Innovation <br>Hidayah Cloud</div>
+                  <div class="skill-badge">Data Science & AI</div>
+                  <div class="skill-badge">Data Analytics</div>
+                  <div class="skill-badge">Information Technology</div>
+                  <div class="skill-badge">Software Development</div>
+                  <div class="skill-badge">Software Engineering</div>
+                </div>
+              </div>
+
+
+            </div><!-- End Skills Summary -->
+          </div>
+
+
         </div>
 
       </div>
@@ -460,150 +963,377 @@
     <section id="resume" class="resume section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="text-align: center; color: #004d40; font-family: Arial, sans-serif;">Resume</h2>
-        <p style="text-align: center; color: #666; font-size: 16px;">
-          I aim to leverage my IT skills and knowledge to serve Islam, our country, and nation while continuously
-          enhancing my capabilities in the sector.
+      <div class="container section-title">
+        <h2>Resume</h2>
+        <p>
+          I aim to leverage my IT expertise and Islamic scholarship to serve Islam, Pakistan, and society through
+          ethical technology, education, and skill development.
         </p>
       </div>
 
-      <div class="container resume">
-
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title" style="color: #00796b; font-family: Arial, sans-serif; margin-bottom: 20px;">
-              Summary</h3>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Syed Muhammad Arsalan Shah</h4>
-              <p style="font-style: italic; color: #666;">I want to use my capabilities in the IT sector to further
-                improve my skills and knowledge, and with that, serve Islam, our country, and nation.</p>
-              <ul style="list-style-type: none; padding-left: 0; color: #666;">
-                <li>Karachi, Pakistan</li>
-                <li>+92 303 2006225</li>
-                <li>smarsalanshah125@gmail.com</li>
-              </ul>
-            </div>
 
-            <h3 class="resume-title" style="color: #00796b; font-family: Arial, sans-serif; margin-bottom: 20px;">
-              Education</h3>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">BS in Islamic Studies & Computer Technology</h4>
-              <h5 style="color: #666;">2022 - Present</h5>
-              <p style="color: #666;">Sheikh Zayed Islamic Center, University of Karachi</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Intermediate</h4>
-              <h5 style="color: #666;">2019 - 2020</h5>
-              <p style="color: #666;">Govt. Premier College</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Matriculation</h4>
-              <h5 style="color: #666;">2017 - 2018</h5>
-              <p style="color: #666;">Jamia Tul Imam Noman Bin Sabit</p>
-            </div>
+          <!-- ===================== PROFESSIONAL JOURNEY ===================== -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="experience-section">
 
-            <h3 class="resume-title" style="color: #00796b; font-family: Arial, sans-serif; margin-bottom: 20px;">
-              Courses & Diplomas</h3>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">DATA SCIENCE INTERNSHIP</h4>
-              <h5 style="color: #666;">2025</h5>
-              <p style="color: #666;">SKILLED SCORE – DR. ZEESHAN USMANI PROGRAM</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Python & Feature Engineering </h4>
-              <h5 style="color: #666;">2025</h5>
-              <p style="color: #666;">KAGGLE</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">IBM DATA SCIENCE PROFESSIONAL CERTIFICATE</h4>
-              <h5 style="color: #666;">2025</h5>
-              <p style="color: #666;">IBM | COURSERA</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Data Analyst in Microsoft Power BI</h4>
-              <h5 style="color: #666;">2024</h5>
-              <p style="color: #666;">NED Academy, NED University</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Graphic Designing & Application Development Course</h4>
-              <h5 style="color: #666;">2020 - 2021</h5>
-              <p style="color: #666;">IBA University | City Campus </p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Diploma in Information Technology</h4>
-              <h5 style="color: #666;">2018 - 2021</h5>
-              <p style="color: #666;">Eureka FB Area Campus</p>
-            </div>
+              <div class="section-header">
+                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
+                <p class="section-subtitle">
+                  Faculty and academic leadership roles across government-aligned and private institutions, delivering
+                  competency-based IT, AI, and Data Science education.
+                </p>
+              </div>
 
+              <div class="experience-cards">
+
+                <!-- MITI -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Artificial Intelligence Instructor | Visiting Faculty</h3>
+                      <h4>Memon Industrial & Technical Institute (MITI)</h4>
+                    </div>
+                    <span class="duration">Sep 2025 – Present</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Delivering AI training aligned with NAVTTC competency-based education standards</li>
+                      <li>Teaching AI fundamentals, real-world applications, and ethical considerations</li>
+                      <li>Designing hands-on labs and assessments mapped to skill-based outcomes</li>
+                      <li>Preparing students for workforce readiness through project-based evaluation</li>
+                      <li>Supporting national technical skill development objectives</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Aptech DS -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Visiting Faculty – Data Science</h3>
+                      <h4>Aptech Learning Pakistan • Gulshan I</h4>
+                    </div>
+                    <span class="duration">Jan 2025 – Present</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Teaching Data Science using Python, statistics, and machine learning fundamentals</li>
+                      <li>Guiding students through real-world data analysis and visualization projects</li>
+                      <li>Designing industry-aligned assignments and evaluations</li>
+                      <li>Providing structured technical mentoring and feedback</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- NAVTTC CISD -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Visiting Faculty</h3>
+                      <h4>NAVTTC • CISD (Govt. of Pakistan)</h4>
+                    </div>
+                    <span class="duration">2025</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Conducted IT training under NAVTTC national skill development initiatives</li>
+                      <li>Delivered structured, employability-focused technical curriculum</li>
+                      <li>Assessed students based on NAVTTC competency evaluation standards</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- NAVTTC MIT -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Visiting Faculty Member</h3>
+                      <h4>NAVTTC • MIT (Govt. of Pakistan)</h4>
+                    </div>
+                    <span class="duration">2025</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Provided hands-on instruction in programming and IT fundamentals</li>
+                      <li>Focused on workforce readiness and practical skill building</li>
+                      <li>Supported government-led youth empowerment programs</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Aptech Gulshan II -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Visiting Faculty Member</h3>
+                      <h4>Aptech Learning Pakistan • Gulshan II</h4>
+                    </div>
+                    <span class="duration">Jun 2024 – Present</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Teaching software development, programming, and application concepts</li>
+                      <li>Mentoring students through academic and project-based learning</li>
+                      <li>Maintaining instructional quality and curriculum consistency</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Academic Head -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="600">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Centre Academic Head & Faculty</h3>
+                      <h4>Aptech Learning Pakistan • Gulshan II</h4>
+                    </div>
+                    <span class="duration">Dec 2022 – Jun 2023</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Managed academic operations and faculty coordination</li>
+                      <li>Ensured curriculum quality, assessments, and learning outcomes</li>
+                      <li>Handled academic planning, evaluations, and reporting</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Faculty -->
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="650">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Faculty</h3>
+                      <h4>Aptech Learning Pakistan</h4>
+                    </div>
+                    <span class="duration">Sep 2021 – Nov 2022</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Taught foundational programming and IT concepts</li>
+                      <li>Supported student academic growth and skill development</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title" style="color: #00796b; font-family: Arial, sans-serif; margin-bottom: 20px;">
-              Islamic Education</h3>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Dars e Nizami (Alim Course)</h4>
-              <h5 style="color: #666;">2017 - 2024</h5>
-              <p style="color: #666;">Jamia Tul Imam Noman</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Tafseer-e-Quran & Arabic Course</h4>
-              <h5 style="color: #666;">2020</h5>
-              <p style="color: #666;">Ustadh Mufti Tariq Masood SB | Wisdom Explorers</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Hadees Short Course</h4>
-              <h5 style="color: #666;">2020</h5>
-              <p style="color: #666;">Ustadh Mufti Syed Adnan Kakakhail | Al Burhan</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Hifz-ul-Quran</h4>
-              <h5 style="color: #666;">2010 - 2013</h5>
-              <p style="color: #666;">Iqra Roza Tul Ilm</p>
-            </div>
+          <!-- ===================== EDUCATION ===================== -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="education-section">
 
-            <h3 class="resume-title" style="color: #00796b; font-family: Arial, sans-serif; margin-bottom: 20px;">
-              Professional Experience</h3>
+              <div class="section-header">
+                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
+                <p class="section-subtitle">
+                  Formal higher education, advanced Islamic scholarship, and professional IT certifications.
+                </p>
+              </div>
 
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Visiting Faculty</h4>
-              <h5 style="color: #666;">Contract • 2025</h5>
-              <p style="color: #666;"> NAVTTC INSTITUTE | GOVT - PAKISTAN • CISD</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Visiting Faculty Member</h4>
-              <h5 style="color: #666;">Contract • 2025</h5>
-              <p style="color: #666;">NAVTTC INSTITUTE | GOVT - PAKISTAN • MIT</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Visiting Faculty DATA SCIENCE</h4>
-              <h5 style="color: #666;">JAN 2025 - Present</h5>
-              <p style="color: #666;">Aptech Learning Pakistan • Gulshan I</p>
-            </div>
+              <div class="education-timeline">
+                <div class="timeline-track"></div>
 
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Visiting Faculty Member</h4>
-              <h5 style="color: #666;">Jun 2024 - Present</h5>
-              <p style="color: #666;">Aptech Learning Pakistan • Gulshan II</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Visiting Faculty</h4>
-              <h5 style="color: #666;">Jun 2023 - Jun 2024</h5>
-              <p style="color: #666;">Aptech Learning Pakistan • Gulshan II</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Centre Academic Head & Faculty</h4>
-              <h5 style="color: #666;">Dec 2022 - Jun 2023</h5>
-              <p style="color: #666;">Aptech Learning Pakistan • Gulshan II</p>
-            </div>
-            <div class="resume-item" style="margin-bottom: 30px;">
-              <h4 style="color: #004d40;">Faculty</h5>
-                <h5 style="color: #666;">SEPTEMBER 2021 - NOVEMBER 2022</h5>
-                <p style="color: #666;">Aptech Learning Pakistan</p>
+
+                <!-- BS -->
+                <div class="education-item" data-aos="slide-up" data-aos-delay="350">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>BS in Islamic Studies & Computer Technology</h3>
+                      <span class="year">2022 – 2026</span>
+                    </div>
+                    <h4 class="institution">Sheikh Zayed Islamic Center, University of Karachi</h4>
+                    <p>
+                      <strong>Activities and Societies:</strong> Participated in academic and extracurricular activities
+                      that strengthened both technical and Islamic knowledge.
+                      Engaged in projects combining Computer Technology with Islamic studies, collaborated in study
+                      groups for Quranic and Arabic learning, and took part in workshops aimed at integrating modern IT
+                      skills with traditional religious education.
+                    </p>
+
+                  </div>
+                </div>
+
+
+                <!-- Dars-e-Nizami -->
+                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Dars-e-Nizami (Alim Course)</h3>
+                      <span class="year">2017 – 2024</span>
+                    </div>
+                    <h4 class="institution">Jamia Tul Imam Noman</h4>
+                    <p>
+                      Completed the Dars-e-Nizami curriculum, integrating classical Islamic studies with Hifz and formal
+                      schooling.
+                      The program emphasized the tarbiyah (moral and spiritual development) of students, preparing them
+                      to become scholars and preachers capable of addressing modern challenges.
+                      The curriculum included advanced studies in Fiqh, Hadith, Tafseer, Arabic language, and Islamic
+                      jurisprudence, equipping graduates with deep religious knowledge and analytical skills.
+                    </p>
+                    <p>
+                      <strong>Activities and Societies:</strong> Actively participated in Quranic memorization programs,
+                      study circles, debates, and other extracurricular activities focused on holistic development and
+                      practical application of Islamic teachings.
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <!-- Certifications -->
+                <!-- Certifications -->
+                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Professional Certifications & Specialized Programs</h3>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="420">
+                      <div class="degree-header">
+                        <h5>IBM Data Science Professional Certificate</h5>
+                        <span class="year">Coursera · 2025</span>
+                      </div>
+                      <p>Comprehensive program covering Python, data analysis, machine learning, and real-world projects
+                        for end-to-end data science solutions.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="440">
+                      <div class="degree-header">
+                        <h5>Python & Feature Engineering</h5>
+                        <span class="year">Kaggle · 2025</span>
+                      </div>
+                      <p>Advanced Python programming and feature engineering techniques for effective machine learning
+                        model development.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="460">
+                      <div class="degree-header">
+                        <h5>Data Science Internship</h5>
+                        <span class="year">Skilled Score · 2025</span>
+                      </div>
+                      <p>Hands-on experience in data collection, preprocessing, visualization, and model implementation
+                        under professional mentorship (Dr. Zeeshan Usmani Program).</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="480">
+                      <div class="degree-header">
+                        <h5>Prime: Artificial Intelligence & ML Program</h5>
+                        <span class="year">Apna College · 2024</span>
+                      </div>
+                      <p>Practical training in Python, Data Analysis, Machine Learning, Deep Learning, and Generative
+                        AI. Covered AI Engineering Stack with real-world projects.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="500">
+                      <div class="degree-header">
+                        <h5>Data Analyst (Microsoft Power BI)</h5>
+                        <span class="year">NED Academy · 2024</span>
+                      </div>
+                      <p>Developed expertise in data visualization, interactive dashboards, and reporting using
+                        Microsoft Power BI.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="520">
+                      <div class="degree-header">
+                        <h5>Data Science Bootcamp: From Analyzing Data to Creating ML Models</h5>
+                        <span class="year">GeeksforGeeks · 2024</span>
+                      </div>
+                      <p>Intensive bootcamp focusing on data analysis, statistical modeling, and end-to-end machine
+                        learning projects.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="540">
+                      <div class="degree-header">
+                        <h5>The Ultimate Job Ready Data Science Course</h5>
+                        <span class="year">Code With Harry · 2023</span>
+                      </div>
+                      <p>Structured course preparing for industry roles, covering Python, ML, data visualization, and
+                        practical projects.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="560">
+                      <div class="degree-header">
+                        <h5>Web & Application Development (CIT)</h5>
+                        <span class="year">IBA City Campus · 2020–2021</span>
+                      </div>
+                      <p>Learned full-stack web & mobile application development, UI/UX design principles, and
+                        multimedia tools.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="580">
+                      <div class="degree-header">
+                        <h5>Eureka Information Technology Professional</h5>
+                        <span class="year">Eureka FB Area Campus · 2021</span>
+                      </div>
+                      <p>Software development skills including full-stack programming, databases (SQL, MySQL, SQLite,
+                        SQL Server), REST APIs, C#, Java, Python, PHP, ASP.NET MVC, Android Studio, Bootstrap, and
+                        Firebase.</p>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+                <!-- Islamic Specializations -->
+                <div class="education-item" data-aos="slide-up" data-aos-delay="450">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Islamic Specializations</h3>
+                    </div>
+
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="490">
+                      <div class="degree-header">
+                        <h5>Tafseer-e-Quran & Arabic Studies</h5>
+                        <span class="year">Ustadh Mufti Tariq Masood · 2020</span>
+                      </div>
+                      <p>Focused on Quranic exegesis, Arabic texts, and interpretation methodologies.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="510">
+                      <div class="degree-header">
+                        <h5>Hadith Studies (Short Program)</h5>
+                        <span class="year">Ustadh Mufti Syed Adnan Kakakhail · 2020</span>
+                      </div>
+                      <p>Emphasized Hadith compilation, authentication, and thematic understanding.</p>
+                    </div>
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="470">
+                      <div class="degree-header">
+                        <h5>Dars-e-Nizami</h5>
+                        <br>
+                        <span class="year">Jamia Tul Imam Noman · 2017–2024</span>
+                      </div>
+                      <p>8-year comprehensive program covering classical Islamic sciences, jurisprudence, theology, and
+                        Arabic studies.</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="530">
+                      <div class="degree-header">
+                        <h5>Hifz-ul-Quran</h5>
+                        <span class="year">Iqra Roza Tul Ilm · 2010–2013</span>
+                      </div>
+                      <p>Memorization and recitation of the Quran with tajweed and fluency.</p>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
             </div>
           </div>
+
         </div>
       </div>
+
+
 
       <br><br>
       <div style="text-align: center; margin-top: 50px;">
@@ -611,749 +1341,748 @@
           <div class="row">
             <div class="col-12 col-md-6 mb-3 mb-md-0">
               <a href="assets/Resume/RESUME.pdf" target="_blank" download="Syed Muhmmad Arsalan Shah Resume.pdf"
-                style="text-decoration: none; background-color: #00796b; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; width: 100%; box-sizing: border-box;">
+                style="text-decoration: none; background-color: #065cc2; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; width: 100%; box-sizing: border-box;">
                 <i class="bi bi-download" style="margin-right: 8px; font-size: 1.2rem;"></i> Download Resume
               </a>
             </div>
             <div class="col-12 col-md-6">
               <a href="https://syedmuhammadarsalanshah.github.io/SMASB/" target="_blank"
-                style="text-decoration: none; background-color: #00796b; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; width: 100%; box-sizing: border-box;">
+                style="text-decoration: none; background-color: #065cc2; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; display: inline-block; text-align: center; width: 100%; box-sizing: border-box;">
                 <i class="bi bi-people" style="margin-right: 8px; font-size: 1.2rem;"></i> Read Only Resume
               </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- /Resume Section -->
 
-    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title">
+        <h2>Services</h2>
+        <p>Empowering individuals and organizations through AI, Islamic knowledge, and personal growth.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-robot"></i></div>
+              <h3>AI, ML & GenAI Solutions</h3>
+              <p>Developing AI, Machine Learning, Deep Learning, and GenAI models for smart solutions, predictive
+                systems, and Islamic tech platforms like Hidayah Cloud.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="AI, ML & GenAI Solutions">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <h3>Full-Stack Web & Mobile Development</h3>
+              <p>Designing enterprise-grade web & mobile applications using C#, Java, Python, PHP, ASP.NET, Flutter, and
+                modern frameworks.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="Full-Stack Web & Mobile Development">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
+              <h3>Data Science & Analytics</h3>
+              <p>End-to-end data science: data analysis, ML model creation, Deep Learning pipelines, and AI engineering
+                for actionable insights.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="Data Science & Analytics">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-journal-bookmark"></i></div>
+              <h3>Islamic Tech & Digital Learning</h3>
+              <p>Creating Islamic applications, Quranic learning tools, and innovative platforms like Hidayah Cloud for
+                global access.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="Islamic Tech & Digital Learning">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+              <h3>Motivational Speaking & Training</h3>
+              <p>Inspiring students and professionals with talks on AI, tech, personal growth, Islamic values, and
+                lifelong learning.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="Motivational Speaking & Training">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-cloud-arrow-up"></i></div>
+              <h3>Cloud & IT Solutions</h3>
+              <p>Deploying and managing cloud infrastructures, REST APIs, databases, and AI-enabled enterprise IT
+                systems.</p>
+              <div class="card-links">
+                <a href="https://wa.me/923032006225" class="link-item" target="_blank"
+                  data-service="Cloud & IT Solutions">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript to dynamically set WhatsApp messages -->
+    <script>
+      const waLinks = document.querySelectorAll('.link-item');
+      const number = '923032006225';
+
+      waLinks.forEach(link => {
+        const serviceName = link.getAttribute('data-service');
+        const message = encodeURIComponent(`I am interested in ${serviceName}`);
+        link.href = `https://wa.me/${number}?text=${message}`;
+      });
+    </script>
+
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Projects</h2>
-        <p>Explore some of my key projects, ranging from web applications to mobile apps, each crafted with attention to
-          detail and a focus on user experience.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-hidayahcloud">Hidayah Cloud</li>
-            <li data-filter=".filter-web">Web Apps</li>
-            <li data-filter=".filter-mobile">Mobile Apps</li>
-            <li data-filter=".filter-api">APIs</li>
-            <li data-filter=".filter-system">Desktop Apps</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hidayahcloud">
-              <img src="assets/img/portfolio/HC.png" class="img-fluid" alt="hidayahcloud by SMAS ">
-              <div class="portfolio-info">
-                <h4>Hidayah Cloud</h4>
-                <p>Hidayah Cloud is a platform combining Islamic guidance with modern technology.</p>
-                <a href="https://hidayahcloud.vercel.app/" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/QV.png" class="img-fluid" alt="Quran Voices bY SMAS ">
-              <div class="portfolio-info">
-                <h4> Quran Voices
-                </h4>
-                <p>A beautiful, easy-to-use Kivy app for listening to the Quran with audio playback of verses. This app
-                  allows users to choose a reciter and listen to audio for each Surah and its verses.
-
-                </p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/QuranVoices" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/MushafCloud.png" class="img-fluid" alt="Mushaf Cloud Islamic App by SMAS">
-              <div class="portfolio-info">
-                <h4>Mushaf Cloud</h4>
-                <p>Mushaf Cloud offers the Quran with translations and tafsirs in 40 languages, plus high-quality audio
-                  by top reciters.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/mushafcloud" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item 1: Islamic Insight Hub -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/islamic hubbb.jpg" class="img-fluid" alt="Islamic Insight Hub APP by SMAS">
-              <div class="portfolio-info">
-                <h4>Islamic Insight Hub</h4>
-                <p>A comprehensive platform offering insights, resources, and tools for deepening Islamic knowledge.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/Islamic-Insights-Hub-Application" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item 2 -->
-
-            <!-- Portfolio Item 1: Al-Mushaf -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/al mushaf.jpg" class="img-fluid" alt="Al-Mushaf APP by SMAS">
-              <div class="portfolio-info">
-                <h4>Al-Mushaf Audio Player </h4>
-                <p>Complete Quran with recitation by Mishary Rashid Alafasy, featuring a clear and user-friendly
-                  interface.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/Al-Mushaf" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item 1 -->
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/quran.jpg" class="img-fluid" alt="Quran App by SMAS">
-              <div class="portfolio-info">
-                <h4>Quran APP </h4>
-                <p>A feature-rich Quran app with audio, translations, and tafseer.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/Quran/" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/b3.jpg" class="img-fluid" alt="Hadith App by SMAS">
-              <div class="portfolio-info">
-                <h4>Hadith App</h4>
-                <p>A comprehensive app offering a vast collection of Hadiths.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/HadithApplication" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/course_api.png" class="img-fluid" alt="Course API Project by SMArsalanShah">
-              <div class="portfolio-info">
-                <h4>Course API</h4>
-                <p>A comprehensive API solution for managing courses, including enrollment, scheduling, and progress
-                  tracking.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/SMArsalanShahEIT" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/maps.jpg" class="img-fluid" alt="Google Maps Integration by SMASB">
-              <div class="portfolio-info">
-                <h4>Google Maps Integration</h4>
-                <p>Custom Google Maps implementation for various web projects.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/FlutterCourse/tree/master/FlutterCourseSecondary2023/lecture30google_map_api"
-                  target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <img src="assets/img/portfolio/foodie.jpg" class="img-fluid" alt="Foodie App">
-              <div class="portfolio-info">
-                <h4>Foodie App</h4>
-                <p>A mobile app designed to find and share food experiences.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/Foodieapp" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
-              <img src="assets/img/portfolio/quran-api.jpg" class="img-fluid" alt="Quran API by SMAS">
-              <div class="portfolio-info">
-                <h4>Quran API</h4>
-                <p>A RESTful API providing access to Quranic data for developers.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/LaravelQuranAPI" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
-              <img src="assets/img/portfolio/hadith.jpg" class="img-fluid" alt="Hadith App  by SMAS">
-              <div class="portfolio-info">
-                <h4>Hadith Nabawi ﷺ API</h4>
-                <p>A comprehensive web api offering a vast collection of Hadiths.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/HadithNabiAPI" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
-              <img src="assets/img/portfolio/news-api.jpg" class="img-fluid" alt="News API Web App SMAS">
-              <div class="portfolio-info">
-                <h4>News API Web App</h4>
-                <p>A web application that aggregates news from various sources.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/news/" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
-              <img src="assets/img/portfolio/school.jpg" class="img-fluid" alt="School Management System">
-              <div class="portfolio-info">
-                <h4>Library Management System</h4>
-                <p>An integrated solution for managing school operations efficiently.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/Library-Management-System" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
-              <img src="assets/img/portfolio/restaurant.jpg" class="img-fluid" alt="Restaurant Management System by Syed Muhammad Arsalan Shah">
-              <div class="portfolio-info">
-                <h4>Restaurant Management System</h4>
-                <p>A comprehensive system to manage restaurant operations efficiently.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/JavaPOS" title="More Details" target="_blank"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <!-- Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/portfolio/ecommerce.jpg" class="img-fluid" alt="E-commerce Project  by Syed Muhammad Arsalan Shah">
-              <div class="portfolio-info">
-                <h4>E-commerce</h4>
-                <p>A complete e-commerce solution with a user-friendly interface.</p>
-                <a href="https://github.com/SyedMuhammadArsalanShah/junaidjamshed" target="_blank" title="More Details"
-                  class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-
-
-
-
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
+      <div class="container section-title">
+        <h2>Portfolio</h2>
+        <p id="portfolio-intro">Explore the innovative projects of Syed Muhammad Arsalan Shah in Islamic Tech, AI, and
+          Education.</p>
 
       </div>
 
+      <div class="container-fluid">
+        <div class="isotope-layout">
+          <ul class="portfolio-filters isotope-filters"></ul>
+          <div class="row g-4 isotope-container"></div>
+        </div>
+      </div>
     </section>
+    <!-- /Portfolio Section -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch('assets/data/projects.json')
+          .then(res => res.json())
+          .then(projects => {
+            // ================= Sorting =================
+            const priority = ["Islamic Tech Innovation", "Data Science & AI Projects"];
+            projects.sort((a, b) => {
+              const indexA = priority.indexOf(a.category) !== -1 ? priority.indexOf(a.category) : priority.length;
+              const indexB = priority.indexOf(b.category) !== -1 ? priority.indexOf(b.category) : priority.length;
 
-    </div>
+              // Priority first, then alphabetical
+              if (indexA !== indexB) return indexA - indexB;
+              return a.category.localeCompare(b.category);
+            });
 
-    </div>
+            renderFilters(projects);
+            renderPortfolioItems(projects);
+            initIsotope();
+          })
+          .catch(err => console.error(err));
+      });
 
-    </div>
+      // ================= Helper Functions =================
+      function slugify(text) {
+        return text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      }
 
-    </div>
+      // ================= Filters =================
+      function renderFilters(projects) {
+        const filterContainer = document.querySelector('.portfolio-filters');
+        filterContainer.innerHTML = '';
+        const categories = ['All', ...new Set(projects.map(p => p.category))];
 
-    </section><!-- /Portfolio Section -->
+        categories.forEach(cat => {
+          const li = document.createElement('li');
+          li.dataset.filter = cat === 'All' ? '*' : `.filter-${slugify(cat)}`;
+          li.className = cat === 'All' ? 'filter-active' : '';
+          const project = projects.find(p => p.category === cat);
+          const iconClass = project ? project.icon : 'bi-briefcase';
+          li.innerHTML = `<i class="bi ${iconClass} me-1"></i> ${cat}`;
+          filterContainer.appendChild(li);
+        });
+      }
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
+      // ================= Portfolio Items =================
+      function renderPortfolioItems(projects) {
+        const container = document.querySelector('.isotope-container');
+        container.innerHTML = '';
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Check out the great services we offer</p>
-        </div>
+        projects.forEach(p => {
+          const categoryClass = `filter-${slugify(p.category)}`;
+          const col = document.createElement('div');
+          col.className = `col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item ${categoryClass}`;
 
-        <div class="row gy-4">
+          // Media (first video or image)
+          let mediaHTML = '';
+          if (p.video) {
+            const videos = Array.isArray(p.video) ? p.video : [p.video];
+            videos.forEach(v => {
+              if (v.type === 'youtube') {
+                mediaHTML += `
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="${v.src}"
+                title="${p.title}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>`;
+              } else if (v.type === 'mp4') {
+                mediaHTML += `
+            <video class="w-100" controls poster="${v.poster || ''}">
+              <source src="${v.src}" type="video/mp4">
+            </video>`;
+              }
+            });
+          } else if (p.media && p.media.length > 0) {
+            mediaHTML = `<img src="${p.media[0]}" class="img-fluid" alt="${p.title}" loading="lazy">`;
+          }
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,542.5372278819353C387.9380475058687,543.6173565485205,472.34937347686513,519.665155824677,505.51421460717757,440.16268708420695C538.0887527762435,361.8307017347071,501.6463565982078,274.0197167596673,471.0379566186721,196.26830837329952C441.45893914958154,121.71196825892652,413.2407034858914,38.59474764000394,335.5640071820023,14.412242917504625C256.36779513990135,-10.720824628776215,170.72075705094904,37.550783268148965,104.9147552211501,86.22676055471548C43.570165074516026,131.80110593793158,1.6542852413174937,198.91143782216078,1.0030153032814435,272.6812647843362C0.3451456755106633,347.56354891500293,-2.7597348129080664,425.9189910123304,49.60749962814844,487.76772576009997C101.3685471699096,548.4731853726754,202.3742040092825,541.3026403155391,300,542.5372278819353">
-                  </path>
-                </svg>
-                <i class="bi bi-briefcase"></i>
+          col.innerHTML = `
+      <article class="portfolio-entry">
+        <figure class="entry-image">
+          ${mediaHTML}
+          <div class="entry-overlay">
+            <div class="overlay-content">
+              <div class="entry-meta">${p.category}</div>
+              <h3 class="entry-title">${p.name}</h3>
+              <div class="entry-links">
+                <a href="${p.media[0] || ''}" class="glightbox" data-gallery="portfolio-gallery-${p.id}" data-title="${p.title}" data-description="${p.overview}">
+                  <i class="bi bi-arrows-angle-expand"></i>
+                </a>
+                <a href="portfolio-details.html?id=${p.id}">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Flutter Course</h3>
-              </a>
-              <p>Providing in-depth training on Flutter development to create beautiful, natively compiled applications
-                for mobile, web, and desktop from a single codebase.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+        </figure>
+      </article>
+    `;
+          container.appendChild(col);
+        });
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-green position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,526.2989104487774C380.124929059047,523.5400706926003,456.14578932812934,512.5954654243642,498.4626966891735,446.9956187189922C540.3668005270076,381.9668682906344,522.2397746570213,297.7442597068367,493.14682049696544,224.3859135743296C463.44489220446436,148.48135038026304,449.7269530281195,60.824542280620045,383.0268126661508,21.347284539509717C313.40165402827114,-19.629556453488176,225.39750828693997,10.272451300178718,151.75372500404367,39.77665460147152C82.77258938321376,67.47074905158358,21.228108353150234,122.20462936019793,4.312978109512866,192.52130578496334C-14.761378332546434,267.1891604877275,-18.138275355515657,352.6184370743915,35.7920071535931,419.1947065424588C88.32812422610774,483.4405235673116,194.1440421194942,529.3462990177484,300,526.2989104487774">
-                  </path>
-                </svg>
-                <i class="bi bi-card-checklist"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Arabic Course</h3>
-              </a>
-              <p>Comprehensive Arabic language course focusing on reading, writing, and conversational skills, tailored
-                for all levels.</p>
-            </div>
-          </div><!-- End Service Item -->
+        // Re-init Glightbox
+        GLightbox({ selector: '.glightbox' });
+      }
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-blue position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,512.227389148616C384.9896107685583,510.7827023819619,481.0954408172874,499.83227225618895,512.8792681712898,419.51277640056846C544.0979896188682,341.61468124909415,491.83038552879524,259.3538886188081,452.5862981439936,190.68450137641918C414.2177163361469,124.40817577684684,364.6459344995978,57.15573879835475,286.41428086848264,46.34038528241326C202.6284655112874,34.63494844436284,116.45130861913415,84.15961431400817,62.26858290518955,147.5777798163433C10.759761057119348,207.728408441388,-4.448116579406501,291.5437434858009,14.464676822434235,368.5680513362719C32.21810721317401,443.66800901186876,88.2377933600087,510.5303754762556,165.9328557587107,525.579409090366C210.4384701671939,534.5136214881476,256.7044968836058,514.2593826469268,300,512.227389148616">
-                  </path>
-                </svg>
-                <i class="bi bi-bar-chart"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Designing</h3>
-              </a>
-              <p>Offering creative and responsive web design services to build engaging and user-friendly websites that
-                meet modern standards.</p>
-            </div>
-          </div><!-- End Service Item -->
+      // ================= Isotope =================
+      function initIsotope() {
+        const grid = document.querySelector('.isotope-container');
+        const iso = new Isotope(grid, { itemSelector: '.isotope-item', layoutMode: 'masonry' });
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,503.46388370962813C382.572674724262,504.28440777706515,464.5883720983764,490.1211965993952,501.8658521652361,413.9255745254428C539.9377940208258,335.58987517837474,494.334640905986,250.8540660032151,464.53647766417815,173.1085817997636C435.2088286093056,96.29431477803465,416.98617818526667,10.64443838399984,335.47293218813484,2.581719945197206C256.46429089665426,-5.330278020522199,186.76386243833518,63.03920645774791,117.9804742761654,104.96235832708889C56.243444564452635,142.241388658624,-14.422109923738554,168.08192447688708,1.0419150455709464,239.727782804142C16.008542612750106,309.56414907849904,-15.946151626653722,384.26259797442275,35.94417295066003,445.4705624090571C85.45336062876832,503.1372448894733,193.59946405051935,502.6883356495048,300,503.46388370962813">
-                  </path>
-                </svg>
-                <i class="bi bi-binoculars"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Basic IT Courses</h3>
-              </a>
-              <p>Providing foundational IT courses to build essential computer skills, including basic software,
-                hardware, and networking concepts.</p>
-            </div>
-          </div><!-- End Service Item -->
+        const filters = document.querySelectorAll('.portfolio-filters li');
+        filters.forEach(f => {
+          f.addEventListener('click', () => {
+            filters.forEach(el => el.classList.remove('filter-active'));
+            f.classList.add('filter-active');
+            iso.arrange({ filter: f.dataset.filter });
+          });
+        });
+      }
+    </script>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-purple position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,531.5982501640511C376.1329720739861,538.269156394145,453.86696542536433,545.609938177658,507.2463413281954,490.209443737866C561.562070636267,433.3790919482749,542.0043666461598,342.59880493817306,519.9441016212768,264.74898648964276C498.51788922962865,189.5066060220511,480.0413099446748,108.2732348605225,408.0635622131297,75.05074821879756C334.43255207665526,41.00303634445856,252.2914645513645,-6.286099993330998,178.71515240300486,27.739573677641034C106.51207086007918,60.94429916088926,102.29282903134142,157.93635263686824,76.7624104483455,235.16684827448293C53.29443026804928,306.9355762783243,15.925046837928915,384.7775973630664,56.3520726461887,448.5111051821586C95.66947646023227,510.51530252040844,208.63038443890767,524.7089206431647,300,531.5982501640511">
-                  </path>
-                </svg>
-                <i class="bi bi-brightness-high"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Development</h3>
-              </a>
-              <p>Full-stack web development courses covering front-end and back-end technologies, including HTML, CSS,
-                JavaScript, PHP, and Laravel.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.7603033499602C383.2343762612215,540.6449753423874,482.8937491789819,528.089746635948,523.1680346033637,450.7159115232614C563.4786335587892,373.2634439642564,541.7896461517253,275.2934823894134,504.7290763479654,198.4547731668154C468.61635551555816,123.32849687446814,425.8986540190188,45.967875311228755,348.02658652351286,22.07477386180842C269.25541618322705,-2.4152477498473745,186.51568697311584,63.841530051199924,118.36457103484195,115.64700463638212C59.52722694997079,159.42101854526483,30.14209119263692,229.83445933036008,19.365609661632844,302.68219902870174C9.27213874877321,372.1979615895287,24.260595064285888,447.8883969574568,73.05115911349415,504.23587199291854C122.275647432754,561.2195934924986,208.93701973053525,525.6326051422977,300,532.7603033499602">
-                  </path>
-                </svg>
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Programming</h3>
-              </a>
-              <p>Comprehensive programming courses covering popular languages like Python, JavaScript, and C++, with
-                hands-on projects and real-world applications.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section books section  -->
+    <!-- bs visit link alag se de den bht acha saaa -->
     <section id="testimonials" class="testimonials section">
-
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Books</h2>
-        <p>Explore our collection of influential books that provide deep insights into various subjects.</p>
+      <div class="container section-title">
+        <h2>Publications</h2>
+        <p>Scholarly works exploring the convergence of Islamic thought, modern technology, and research-driven
+          education.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-          <div class="swiper-wrapper">
-            <!-- Parda -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>اے نبیؐ، اپنی بیویوں اور بیٹیوں اور اہل ایمان کی عورتوں سے کہہ دو کہ اپنے اوپر اپنی چادروں
-                          کے پلو لٹکا لیا کریں یہ زیادہ مناسب طریقہ ہے تاکہ وہ پہچان لی جائیں اور نہ ستائی جائیں اللہ
-                          تعالیٰ غفور و رحیم ہے</span> <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
-
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> -->
-                      </p>
-                      <h3><a
-                          href="https://drive.google.com/file/d/1hm50o26bybJ2McoKHREkidnRqSH1Ftqj/view?usp=share_link"
-                          target="_blank">
-                          Parda | پردہ</a></h3>
-                      <h4>اسلامی رہنمائی
-                        | دعوتی تحریر
-                      </h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
+                      convallis at tellus.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">The New York Times</div>
                     </div>
                   </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/parda.jpg" class="img-fluid testimonial-img" alt="Parda by by Syed Muhammad Arsalan Shah">
+                </div>
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero
+                      malesuada feugiat.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">Washington Post</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                      porttitor volutpat.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">The Guardian</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div><!-- End book item -->
-            <!-- Muashray Par Madaris Ke Asrat -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>انسان کے مزاج میں یکسانیت نہیں اور مزاجی طور پر وہ معر ب صفت ہے اس لیے رب العزت نے رسل
-                          بھیجے اور ان کے ساتھ شریعت بھی۔پھر ان کے ماننے والوں نے ایک دن ،دو دن ،سال عرصہ تک اس پر عمل
-                          کیا بعد از منحرف ہوگئے اسطرح یہ چلتا سلسلہ پایہء تکمیل تک پہنچا ۔پھرمحمد ﷺ مہر نبوت کا تاج
-                          لےکر آئے ۔اللہ نے آپ کو جاہلیت کے معاشرے میں پیدا کیا وہ معاشرہ جہاں باپ اپنی دختر کو زمین دوز
-                          کردیتا تھا لیکن آپ محمد ﷺ کی بعثت کے بعد وہ معاشرہ ایک اسلامی معاشرہ بنا ۔آپ صلی اللہ علیہ
-                          وسلم نے ایمانیات ،معاملات ِ زندگی کا قرینہ لوگوں کو سکھایا ،سیکھنے اور سکھانے کے اس عمل میں
-                          دومدارس کا بڑا کردار ہے جن کا ذکر آگے آرہا ہے۔</span>
+            </div> -->
 
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> --> <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
+            <div class="testimonials-container" style="font-family: 'Jameel'">
+              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "992": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }
+                </script>
 
-                      </p>
-                      <h3><a href="https://drive.google.com/file/d/1zJQ5q9OQ896yB6kNW2q_yWzEkPjQZRY_/view?usp=sharing"
-                          target="_blank">معاشرے پر مدارس کے اثرات</a></h3>
-                      <h4>سماجی مطالعہ</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/MADARIS.jpeg" class="img-fluid testimonial-img"
-                      alt="Muashray Par Madaris Ke Asrat  by Syed Muhammad Arsalan Shah">
-                  </div>
+                <div class="swiper-wrapper" id="booksSwiper">
+
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-            </div><!-- End book item -->
-
-            <!-- Arabic Sziz -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>عربی زبان کا جامع رہنما، یہ کتاب عربی شیخ زاید اسلاملک سینٹر،کراچی یونیورسٹی اور جدید
-                          عربی کو سمجھنے کے لئے بنیادی وسائل فراہم
-                          کرتی ہے۔</span> <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
-
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> -->
-                      </p>
-                      <h3><a href="https://drive.google.com/file/d/1ecALrOHqmjcSezI4_qPVZXHi_6wUxIag/view?usp=sharing"
-                          target="_blank">عربی شیخ زاید اسلاملک سینٹر ،کراچی یونیورسٹی</a></h3>
-                      <h4>زبان کا مطالعہ</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/AZIZ.webp" class="img-fluid testimonial-img" alt="Arabic Sziz by Syed Muhammad Arsalan Shah">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End book item -->
-
-
-            <!-- Usool Hadith -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>طلبہ و طالبات اور عام شائقین کےلیے نقشوں کی صورت میں آسان اندازمیں منفرد کوشش
-                        </span> <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
-
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> -->
-                      </p>
-                      <h3><a href="https://drive.google.com/file/d/14n8nVaRksegWysdF7I965SUna3wDIdTT/view?usp=sharing"
-                          target="_blank">
-                          Ilm Usool al-Hadith | علم اصول حدیث</a></h3>
-                      <h4>احادیث نبویﷺ</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/img1.jpg" class="img-fluid testimonial-img" alt="Usool Hadith by Syed Muhammad Arsalan Shah">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End book item -->
-            <!-- علم الصرف  -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>طلبہ و طالبات اور عام شائقین کےلیے نقشوں کی صورت میں آسان اندازمیں منفرد کوشش
-                        </span>
-                        <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
-
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> -->
-                      </p>
-                      <h3><a href="https://drive.google.com/file/d/16XGb6Rr2jWDumEs-UptDtpDVqxo9L_Zj/view"
-                          target="_blank">
-                          Ilm al-Nahw wal-Sarf | علم النحو والصرف</a></h3>
-                      <h4>عربی قواعد</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/FIQA.jpg" class="img-fluid testimonial-img" alt="Usool Hadith by Syed Muhammad Arsalan Shah">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End book item -->
-
-            <!-- Usool Fiqh -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content text-end">
-                      <p>
-                        <!-- <i class="bi bi-quote quote-icon-right"></i> -->
-                        <span>طلبہ و طالبات اور عام شائقین کےلیے نقشوں کی صورت میں آسان اندازمیں منفرد کوشش
-                        </span>
-                        <br>
-                        <span>کتاب پڑھنے کے لیے مندرجہ ذیل کتاب کے نام پر کلک کیجیے</span>
-                        <!-- <i class="bi bi-quote quote-icon-left"></i> -->
-                      </p>
-                      <h3><a href="https://drive.google.com/file/d/1B0gl4StQ3sVH92rBCA2TwdZtt0zel6d2/view?usp=sharing"
-                          target="_blank">
-                          Ilm Usool-e-Fiqh | علم اصول فقہ</a></h3>
-                      <h4>اسلامی فقہ</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/F1.jpg" class="img-fluid testimonial-img" alt="Usool Fiqh by Syed Muhammad Arsalan Shah">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End book item -->
-
-
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
-
-        </div>
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-
-
-    <!-- Courses Section -->
-    <section id="courses" class="courses section">
-      <section class="container mt-5">
-        <div class="text-center mb-4">
-          <h2 class="font-weight-bold"><b>Comprehensive Programming & Web Development Courses</b></h2>
-          <p class="lead">Explore a variety of topics to enhance your coding skills!</p>
         </div>
         <div class="row">
-          <!-- Course Links -->
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/FlutterCourse"
-                  target="_blank">Flutter Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/Java" target="_blank">Java
-                  Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/AndroidCourse"
-                  target="_blank">Android Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/OracleSQL_SZIC/"
-                  target="_blank">Oracle SQL Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/PythonCourse"
-                  target="_blank">Python Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/DjangoCourse"
-                  target="_blank">Django Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/Git-Course"
-                  target="_blank">Git Course</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/PHP-Course24"
-                  target="_blank">PHP Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/LaravelCourse"
-                  target="_blank">Laravel Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/C-Sharp"
-                  target="_blank">C# Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/ASP.NET-CORE-Course"
-                  target="_blank">ASP.NET Core Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/ASP-With-MVC"
-                  target="_blank">ASP with MVC</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/MySqlCourse"
-                  target="_blank">MySQL Course</a></li>
-              <li class="list-group-item"><a href="https://github.com/SyedMuhammadArsalanShah/WebDesigningCourse"
-                  target="_blank">Web Designing Course</a></li>
+          <div class="col-12 text-center" data-aos="fade-up">
+            <div class="overall-rating">
 
-            </ul>
+              <div class="rating-number">5.0</div>
+
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>Scholarly assessment informed by peer-review standards, methodological rigor, and measurable
+                educational impact.</p>
+              <!-- Profile Visitor Badge -->
+
+
+              <div class="rating-platforms">
+                <span>Islamic Research Scholars</span>
+                <span>University Students</span>
+                <span>Academic Study Circles</span>
+              </div>
+
+
+
+            </div>
           </div>
         </div>
-        <br>
-        <div class="text-center mt-4">
-          <a href="https://github.com/SyedMuhammadArsalanShah" target="_blank" class="btn"
-            style="background-color: #00796b; color:white; padding: 15px 30px; font-size: 18px;"> <i
-              class="bi bi-github" style="margin-right: 20px;"></i>Follow My GitHub
-            Profile</a>
+
+      </div>
+    </section>
+
+    <script>
+      fetch('assets/data/books.json')
+        .then(response => response.json())
+        .then(books => {
+          const swiperWrapper = document.getElementById('booksSwiper');
+
+          books.forEach(book => {
+            const stars = '<i class="bi bi-star-fill"></i>'.repeat(book.rating);
+
+            const slide = `
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+
+            <div class="stars">
+              ${stars}
+            </div>
+
+            <p style="font-family: 'Jameel'; text-transform: none; text-align: right; font-style: normal;">
+              <span>${book.quote}</span><br>
+              <span>${book.cta}</span>
+            </p>
+
+            <div class="testimonial-profile">
+              <img src="${book.image}" class="img-fluid rounded-circle" alt="${book.title}">
+              <div>
+                <a href="${book.link}" target="_blank">
+                  <h3 style="font-family: 'Jameel'">${book.title}</h3>
+                </a>
+                <h4 style="font-family: 'Jameel'">${book.category}</h4>
+                <h4 style="font-family: 'Jameel'">${book.author}</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+
+            swiperWrapper.insertAdjacentHTML('beforeend', slide);
+          });
+        })
+        .catch(error => console.error('Books JSON Error:', error));
+    </script>
+
+    <!-- /Testimonials Section -->
+
+
+
+
+    <section id="courses" class="courses section">
+      <div class="container mt-5">
+
+        <!-- Section Header -->
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-heading">Comprehensive Data Science, AI/ML & Software Engineering Courses</h2>
+          <p class="section-subtitle">
+            Curated, practice-driven programs covering Data Science, Artificial Intelligence, Machine Learning,
+            Software Development, and IT, designed for academic depth, industry readiness, and long-term skill mastery.
+          </p>
+
+
+          <!-- Profile Badge -->
+          <div class="profile-badge mt-3">
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=SyedMuhammadArsalanShah.SyedMuhammadArsalanShah"
+              alt="Profile visitor count" />
+          </div>
         </div>
 
+        <!-- Courses Container -->
+        <div class="row g-4" id="courses-container">
+          <!-- Dynamic course cards injected here -->
+        </div>
 
-      </section>
+        <!-- GitHub Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="https://github.com/SyedMuhammadArsalanShah" target="_blank" class="btn premium-github-btn">
+            <i class="bi bi-github me-2"></i>
+            Explore Full Course Repositories
+          </a>
+        </div>
+      </div>
     </section>
 
 
 
+    <script>
+      fetch('assets/data/courses.json')
+        .then(response => response.json())
+        .then(courses => {
+          const container = document.getElementById('courses-container');
+          const mid = Math.ceil(courses.length / 2);
+          const col1 = courses.slice(0, mid);
+          const col2 = courses.slice(mid);
+
+          const createList = list => {
+            return `<div class="col-md-6" data-aos="fade-up">
+          <div class="course-card">
+            <ul class="course-list">
+              ${list.map(course => `
+                <li>
+                  <a href="${course.link}" target="_blank">
+                    <i class="bi ${course.icon}"></i> ${course.title}
+                  </a>
+                </li>`).join('')}
+            </ul>
+          </div>
+        </div>`;
+          };
+
+          container.innerHTML = createList(col1) + createList(col2);
+        })
+        .catch(error => console.error('Error loading courses:', error));
+    </script>
+
+
+
+
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+      <div class="container section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the most common questions about our portfolio and projects.</p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch('assets/data/faq.json')
+          .then(res => res.json())
+          .then(faqs => renderFAQs(faqs))
+          .catch(err => console.error("Failed to load FAQ data:", err));
+      });
+
+      function renderFAQs(faqs) {
+        const faqContainer = document.querySelector('.faq-container');
+        faqContainer.innerHTML = '';
+
+        faqs.forEach((item, i) => {
+          const faqItem = document.createElement('div');
+          faqItem.className = `faq-item ${i === 0 ? 'faq-active' : ''}`;
+          faqItem.innerHTML = `
+      <h3>${item.question}</h3>
+      <div class="faq-content" style="display: ${i === 0 ? 'block' : 'none'};">
+        <p>${item.answer}</p>
+      </div>
+      <i class="faq-toggle bi bi-chevron-right"></i>
+    `;
+          faqContainer.appendChild(faqItem);
+        });
+
+        // Toggle functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(f => {
+          const toggle = f.querySelector('.faq-toggle');
+          toggle.addEventListener('click', () => {
+            faqItems.forEach(el => {
+              if (el !== f) {
+                el.classList.remove('faq-active');
+                el.querySelector('.faq-content').style.display = 'none';
+              }
+            });
+            f.classList.toggle('faq-active');
+            const content = f.querySelector('.faq-content');
+            content.style.display = f.classList.contains('faq-active') ? 'block' : 'none';
+          });
+        });
+      }
+
+    </script>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact section" style=" padding: 60px 0;">
+    <section id="contact" class="contact section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        <p style=" font-size: 1.1rem;">We'd love to hear from you. Reach out to us anytime!</p>
-      </div><!-- End Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Get in touch with Syed Muhammad Arsalan Shah for collaboration, inquiries, or consultation.</p>
+      </div>
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row g-4 g-lg-5">
 
-          <!-- Contact Information -->
-          <div class="col-lg-4">
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p>Reach out via WhatsApp, email, or visit us in Karachi, Pakistan.</p>
 
-            <div class="info-item d-flex align-items-center mb-4" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0" style="font-size: 1.5rem; "></i>
-              <div class="ms-3">
-                <h4 style=" margin-bottom: 5px;">Address</h4>
-                <p>Karachi, Pakistan</p>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Karachi, Pakistan</p>
+                </div>
               </div>
-            </div><!-- End Info Item -->
 
-            <div class="info-item d-flex align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0" style="font-size: 1.5rem; "></i>
-              <div class="ms-3">
-                <h4 style=" margin-bottom: 5px;">Call Us</h4>
-                <p>+92 303 2006225</p>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box"><i class="bi bi-telephone"></i></div>
+                <div class="content">
+                  <h4>Phone / WhatsApp</h4>
+                  <p>+92 303 2006225</p>
+                </div>
               </div>
-            </div><!-- End Info Item -->
 
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0" style="font-size: 1.5rem; "></i>
-              <div class="ms-3">
-                <h4 style=" margin-bottom: 5px;">Email Us</h4>
-                <p>smarsalanshah125@gmail.com</p>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>smarsalanshah125@gmail.com</p>
+                </div>
               </div>
-            </div><!-- End Info Item -->
-
-          </div><!-- End Contact Information -->
-
-          <!-- WhatsApp Button -->
-          <div class="col-lg-8 d-flex justify-content-center align-items-center">
-            <div class="text-center" data-aos="fade-up" data-aos-delay="500">
-              <a href="https://wa.me/923032006225?text=Hi, I would like to contact you!" target="_blank"
-                class="btn btn-whatsapp"
-                style="display: inline-block; padding: 15px 30px; font-size: 1.2rem; color: #fff; background-color: #00796b; border-radius: 50px; text-decoration: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
-                <i class="bi bi-whatsapp" style="margin-right: 10px;"></i> Send Message on WhatsApp
-              </a>
-              <p style=" margin-top: 20px;">We'll respond as soon as possible.</p>
             </div>
-          </div><!-- End WhatsApp Button -->
+          </div>
 
-        </div><!-- End Row -->
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Send a Message</h3>
+              <p>Fill the form and your message will be sent directly to WhatsApp.</p>
 
-      </div><!-- End Container -->
+              <form id="contactForm">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea id="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary"> <i class="bi bi-whatsapp"
+                        style="margin-right: 10px;"></i>Send Message</button>
+                  </div>
+                </div>
+              </form>
 
-    </section><!-- /Contact Section -->
+              <!-- Toast -->
+              <div id="contactToast" class="toast align-items-center text-bg-success border-0" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div class="toast-body">
+                    Your message is ready! Opening WhatsApp...
+                  </div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !subject || !message) {
+          alert('Please fill all fields.');
+          return;
+        }
+
+        // WhatsApp formatting
+        const phone = '923032006225';
+        const text = `السلام علیکم ورحمة الله وبرکاته سید محمدارسلان شاہ، 
+اللہ آپ کو خیر و برکت دے۔ میں آپ سے درج ذیل تفصیلات کے ساتھ رابطہ کر رہا/رہی ہوں:
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+Message: ${message}
+آپ کے وقت کا شکریہ، جزاک اللہ خیراً۔`;
 
 
+        // Show toast
+        const toastEl = document.getElementById('contactToast');
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        toast.show();
+
+        // Delay opening WhatsApp to allow toast to show
+        setTimeout(() => {
+          const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+          window.open(whatsappURL, '_blank');
+          this.reset();
+        }, 1000);
+      });
+
+    </script>
+    <!-- /Contact Section -->
 
   </main>
+  <footer id="footer" class="footer dark-background">
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 style="font-family: 'jameel', serif; font-size: 2rem;  margin-bottom: 1rem;">
+    <div class="container text-center">
+      <h3 style="font-family: 'Jameel', serif; font-size: 2rem; margin-bottom: 1rem;">
         Syed Muhammad Arsalan Shah
       </h3>
-      <p style="font-family: 'jameel', serif; font-size: 1.5rem; line-height: 1.8; ">
+      <p style="font-family: 'Jameel', serif; font-size: 1.5rem; line-height: 1.8;">
         وقتِ فُرصت ہے کہاں، کام ابھی باقی ہے<br>
         نُورِ توحید کا اِتمام ابھی باقی ہے
       </p>
-      <div class="social-links d-flex justify-content-center">
+
+      <div class="social-links d-flex justify-content-center my-3">
         <a href="https://www.linkedin.com/in/syedmuhammadarsalanshah/" target="_blank"><i
             class="bi bi-linkedin"></i></a>
         <a href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-github"></i></a>
@@ -1366,30 +2095,30 @@
             class="bi bi-instagram"></i></a>
         <a href="https://twitter.com/SMArsalanShah" target="_blank"><i class="bi bi-twitter-x"></i></a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <span> &copy; Copyright</span> <strong class="px-1 sitename"> <a
-              href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-github"></i>
-              SMAS</a>
-          </strong> <span>All Rights Reserved</span>
-        </div>
+
+      <div class="copyright my-2">
+        <span>© Copyright</span>
+        <strong class="px-1 sitename">
+          <a href="https://www.github.com/syedmuhammadarsalanshah/" target="_blank"><i class="bi bi-github"></i>
+            SMAS</a>
+        </strong>
+        <span>All Rights Reserved</span>
       </div>
     </div>
+
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>

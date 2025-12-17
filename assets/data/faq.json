@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What type of projects are included in the portfolio?",
+    "answer": "Our portfolio showcases projects in Islamic tech, Data Science, AI applications, cross-platform mobile apps, and professional software engineering projects, including those developed for NAVTTC and Aptech students."
+  },
+  {
+    "question": "Are the projects real or prototypes?",
+    "answer": "All projects are real. They include client-based solutions, educational platforms for NAVTTC and Aptech, research initiatives, and personal tech innovations."
+  },
+  {
+    "question": "Can I access the source code of these projects?",
+    "answer": "Yes, most projects have their source code available on GitHub, with links provided on each project’s detail page."
+  },
+  {
+    "question": "Do the projects have live demos?",
+    "answer": "Many projects provide live demos, including interactive dashboards, mobile apps, and AI tools. Links are accessible from the project detail pages."
+  },
+  {
+    "question": "Which technologies are mostly used in these projects?",
+    "answer": "Key technologies include Java, Flutter, React, Angular, Python, FastAPI, Firebase, PostgreSQL, GraphQL, AI/ML libraries, and other modern frameworks relevant to educational and Islamic tech applications."
+  },
+  {
+    "question": "How can I contact for project inquiries?",
+    "answer": "You can contact via the website’s contact section, email, or LinkedIn. NAVTTC and Aptech students can also reach out directly through institutional channels for academic collaborations."
+  }
+]

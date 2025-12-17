@@ -433,7 +433,7 @@
       const YOUTUBE_API_KEY = 'AIzaSyCv3PayEqOlPm8GajjfPrA7NShHhzhPXxs';
       const CHANNEL_ID = 'UCr2rECPZXcqSfc11fMVSQiQ';
       async function fetchYouTube() {
-        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=10`);
+        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=popular&maxResults=10`);
         const data = await res.json();
         const wrapper = document.getElementById('youtube-wrapper');
         data.items.forEach(item => {
@@ -451,7 +451,7 @@
           slidesPerView: 2, spaceBetween: 30, loop: true,
           navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
           pagination: { el: '.swiper-pagination', clickable: true },
-          breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 2 } }
+          breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
         });
       }
       fetchYouTube();

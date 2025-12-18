@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Data Science & AI",
+    "icon": "bi-cpu",
+    "delay": 150,
+    "skills": [
+      { "name": "Python", "level": 95 },
+      { "name": "Machine Learning", "level": 90 },
+      { "name": "Deep Learning", "level": 90 },
+      { "name": "Generative AI", "level": 90 },
+      { "name": "AI Engineering Stack", "level": 90 },
+      { "name": "Natural Language Processing", "level": 90 },
+      { "name": "Exploratory Data Analysis", "level": 90 },
+      { "name": "R", "level": 90 },
+      { "name": "Power BI", "level": 85 },
+      { "name": "Tableau", "level": 85 },
+      { "name": "Web Scraping", "level": 85 }
+    ]
+  },
+  {
+    "title": "Frontend Development",
+    "icon": "bi-code-slash",
+    "delay": 200,
+    "skills": [
+      { "name": "HTML5", "level": 85 },
+      { "name": "CSS3", "level": 85 },
+      { "name": "Bootstrap", "level": 82 },
+      { "name": "JavaScript", "level": 82 },
+      { "name": "React", "level": 80 },
+      { "name": "MERN", "level": 80 },
+      { "name": "Flutter", "level": 85 },
+      { "name": "Dart", "level": 85 },
+      { "name": "jQuery", "level": 80 }
+    ]
+  },
+  {
+    "title": "Backend Development",
+    "icon": "bi-server",
+    "delay": 250,
+    "skills": [
+      { "name": "Java", "level": 95 },
+      { "name": "PHP", "level": 90 },
+      { "name": "Laravel", "level": 90 },
+      { "name": "FastAPI", "level": 92 },
+      { "name": "Django", "level": 92 },
+      { "name": "Flask", "level": 92 },
+      { "name": "C#", "level": 90 },
+      { "name": ".NET Core MVC", "level": 90 },
+      { "name": "C / C++", "level": 90 },
+      { "name": "Tkinter & Kivy", "level": 92 }
+    ]
+  },
+  {
+    "title": "Databases",
+    "icon": "bi-database",
+    "delay": 300,
+    "skills": [
+      { "name": "MySQL", "level": 90 },
+      { "name": "PostgreSQL", "level": 85 },
+      { "name": "MongoDB", "level": 85 },
+      { "name": "Firebase", "level": 90 },
+      { "name": "Oracle", "level": 85 },
+      { "name": "SQL", "level": 90 },
+      { "name": "SQLite", "level": 85 },
+      { "name": "SQLAlchemy", "level": 85 },
+      { "name": "Hadoop", "level": 85 }
+    ]
+  },
+  {
+    "title": "Cloud & DevOps",
+    "icon": "bi-cloud",
+    "delay": 350,
+    "skills": [
+      { "name": "Git", "level": 90 },
+      { "name": "GitHub", "level": 90 },
+      { "name": "GitLab", "level": 85 },
+      { "name": "Docker", "level": 85 },
+      { "name": "Bitbucket", "level": 85 },
+      { "name": "Railway Deployment", "level": 85 },
+      { "name": "Vercel Deployment", "level": 85 }
+    ]
+  },
+  {
+    "title": "Design & Tools",
+    "icon": "bi-palette",
+    "delay": 400,
+    "skills": [
+      { "name": "Figma", "level": 68 },
+      { "name": "Canva", "level": 65 },
+      { "name": "Photoshop", "level": 65 },
+      { "name": "Illustrator", "level": 65 }
+    ]
+  }
+]

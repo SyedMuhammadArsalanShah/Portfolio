@@ -100,6 +100,60 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   }
 </style>
+<style>
+  /* ===== Certificate Hover Overlay ===== */
+  .cert-card {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .cert-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: .5rem;
+  }
+
+  .cert-card:hover .cert-overlay {
+    opacity: 1;
+  }
+
+  .cert-overlay i {
+    pointer-events: none;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+  }
+</style>
 
 </head>
 
@@ -191,6 +245,7 @@
       </div>
     </div>
 
+
     <!-- ===== About Me Section ===== -->
     <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
@@ -262,25 +317,28 @@
             <div class="row mt-4">
               <div class="col-md-6">
                 <ul class="list-unstyled">
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Visiting Instructor at
-                    multiple academic institutions</li>
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Curriculum design aligned
-                    with industry & academia</li>
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Research-driven teaching
-                    methodology</li>
+                  <li class="mb-2"><i class="bi bi-megaphone text-danger me-2"></i> Visiting Instructor across premier
+                    academic institutions, guiding the next generation of tech leaders</li>
+                  <li class="mb-2"><i class="bi bi-gear text-warning me-2"></i> Curriculum architect integrating
+                    cutting-edge AI, Machine Learning, Deep Learning, and Islamic technology insights</li>
+                  <li class="mb-2"><i class="bi bi-journal-bookmark text-info me-2"></i> Research-driven, hands-on
+                    methodology fostering practical skills in AI, ML, DL, and Data Science</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <ul class="list-unstyled">
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Java, Flutter, Python,
-                    React & Data Science</li>
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> AI-based educational &
-                    Islamic tech projects</li>
-                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Academic mentoring &
-                    technical leadership</li>
+                  <li class="mb-2"><i class="bi bi-cpu-fill text-success me-2"></i> Expert in Java, Flutter, Python,
+                    React, and advanced Data Science techniques</li>
+                  <li class="mb-2"><i class="bi bi-diamond-fill text-primary me-2"></i> Designer of AI-powered
+                    educational platforms and Islamic tech innovations</li>
+                  <li class="mb-2"><i class="bi bi-stack text-warning me-2"></i> Software engineering, technical
+                    leadership, and academic mentorship with measurable impact</li>
                 </ul>
               </div>
             </div>
+
+
+
           </div>
 
         </div>
@@ -290,10 +348,13 @@
     <!-- ===== Certificates Section ===== -->
     <section id="certificates" class="certificates section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>My Certificates</h2>
-        <p>Hover over a certificate to view it.</p>
-      </div>
+        <h2 class="fw-bold">My Certifications</h2>
+        <p class="text-muted">
+          Explore my verified certificates in Data Science, AI, Software Engineering, and Islamic technology. Hover over
+          each to preview and access the full document.
+        </p>
 
+      </div>
       <div class="container" data-aos="fade-up">
         <div class="swiper certificate-swiper">
           <div class="swiper-wrapper" id="certificate-wrapper"></div>
@@ -304,41 +365,23 @@
       </div>
     </section>
 
-    <!-- ===== PDF Modal ===== -->
+    <!-- PDF Modal -->
     <div id="pdfModal" class="modal">
-      <div style="position:relative;width:90%;height:90%;background:#fff;border-radius:8px;overflow:hidden;">
-        <button id="closeModal" aria-label="Close" style="
-    position:absolute;
-    top:12px;
-    right:12px;
-    z-index:1000;
-    width:44px;
-    height:44px;
-    font-size:24px;
-    font-weight:700;
-    line-height:1;
-    background:#dc3545;
-    color:#fff;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.25);
-  ">
-          &times;
-        </button>
-
+      <div class="modal-content">
+        <button id="closeModal" class="btn-close">&times;</button>
         <iframe id="pdfFrame" src="" style="width:100%;height:100%;border:none;"></iframe>
       </div>
     </div>
 
+
     <!-- ===== Social Hub (YouTube + Facebook) ===== -->
     <section id="social-hub" class="social section py-5" style="background:#f8fafc;">
-      <div class="container section-title  mb-5" data-aos="fade-up">
+      <div class="container section-title mb-5" data-aos="fade-up">
         <h2 class="fw-bold">Social Hub</h2>
-        <p class="text-muted">Latest videos, announcements & learning updates</p>
+        <p class="text-muted">
+          Explore the latest insights, tutorials, and updates on AI, Machine Learning, Deep Learning, Software
+          Engineering, and Islamic technology.
+        </p>
       </div>
 
       <div class="container" data-aos="fade-up">
@@ -347,8 +390,14 @@
           <!-- YouTube Column -->
           <div class="col-lg-7">
             <div class="card border-0 shadow-sm rounded-4 h-100">
-              <div class="card-body">
-                <h4 class="fw-semibold mb-3"><i class="bi bi-youtube text-danger me-2"></i>YouTube Updates</h4>
+              <div class="card-body text-center">
+                <h4 class="fw-semibold mb-3">
+                  <i class="bi bi-youtube text-danger me-2"></i>YouTube Highlights
+                </h4>
+                <p class="text-muted mb-3">
+                  Curated videos showcasing AI, Machine Learning, Deep Learning projects, Software Engineering
+                  tutorials, and Islamic tech innovations.
+                </p>
                 <div class="swiper youtube-swiper">
                   <div class="swiper-wrapper" id="youtube-wrapper"></div>
                   <div class="yt-next swiper-button-next"></div>
@@ -363,10 +412,19 @@
           <div class="col-lg-5">
             <div class="card border-0 shadow-sm rounded-4 h-100">
               <div class="card-body text-center">
-                <h4 class="fw-semibold mb-3"><i class="bi bi-facebook text-primary me-2"></i>Facebook Updates</h4>
-                <div class="fb-page" data-href="https://www.facebook.com/SyedMuhammadArsalanShahBukhari"
-                  data-tabs="timeline" data-height="480" data-adapt-container-width="true" data-hide-cover="false"
-                  data-show-facepile="true"></div>
+                <h4 class="fw-semibold mb-3">
+                  <i class="bi bi-facebook text-primary me-2"></i>Facebook Updates
+                </h4>
+                <p class="text-muted mb-3">
+                  Stay connected with announcements, live sessions, and community insights on AI, Data Science, Software
+                  Engineering, and Islamic tech.
+                </p>
+                <div class="fb-responsive">
+                  <div class="fb-page" data-href="https://www.facebook.com/SyedMuhammadArsalanShahBukhari"
+                    data-tabs="timeline" data-height="400" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="true">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -375,150 +433,143 @@
       </div>
     </section>
 
-    <!-- ===== Swiper & Facebook SDK ===== -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0"></script>
 
-    <script>
-      // ===== Certificates Data & Hover Overlay =====
-      const certificates = [
-        { img: 'assets/img/certificates.png', pdf: 'assets/books/Final_Certs_SMASB.pdf', title: 'Final Certificates' },
-      ];
+
+
+
+  </main>
+
+  <style>
+    .fb-responsive {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* Certificates Hover */
+    .cert-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .cert-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.55);
+      opacity: 0;
+      transition: 0.35s ease;
+    }
+
+    .cert-card:hover .cert-overlay {
+      opacity: 1;
+    }
+
+    .cert-overlay i {
+      font-size: 2rem;
+      color: #fff;
+      background: rgba(19, 68, 127, 0.9);
+      padding: 14px;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* PDF Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 1000;
+      width: 44px;
+      height: 44px;
+      font-size: 24px;
+      font-weight: 700;
+      background: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // ===== Certificates =====
+      const certificates = [{ img: 'assets/img/certificates.png', pdf: 'assets/books/Final_Certs_SMASB.pdf', title: 'Final Certificates' }];
       const certWrapper = document.getElementById('certificate-wrapper');
       certificates.forEach(cert => {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide text-center';
-        slide.innerHTML = `
-        <div class="cert-card position-relative">
-          <img src="${cert.img}" class="img-fluid rounded-3 shadow" alt="${cert.title}">
-          <div class="cert-overlay d-flex justify-content-center align-items-center" onclick="openPDF('${cert.pdf}')">
-            <i class="bi bi-eye fs-2 text-white"></i>
-          </div>
-        </div>
-        <p class="mt-3 fw-semibold">${cert.title}</p>
-      `;
+        slide.innerHTML = `<div class="cert-card">
+      <img src="${cert.img}" class="img-fluid rounded-3 shadow" alt="${cert.title}" loading="lazy">
+      <div class="cert-overlay" onclick="openPDF('${cert.pdf}')"><i class="bi bi-eye"></i></div>
+    </div><p class="mt-3 fw-semibold">${cert.title}</p>`;
         certWrapper.appendChild(slide);
       });
 
-      // ===== Initialize Swipers Separately =====
-      new Swiper('.profile-swiper', {
-        slidesPerView: 1,
-        loop: true,
-        navigation: { nextEl: '.profile-next', prevEl: '.profile-prev' },
-        pagination: { el: '.profile-pagination', clickable: true }
-      });
+      // ===== Swipers =====
+      new Swiper('.profile-swiper', { slidesPerView: 1, loop: true, navigation: { nextEl: '.profile-next', prevEl: '.profile-prev' }, pagination: { el: '.profile-pagination', clickable: true } });
+      new Swiper('.certificate-swiper', { slidesPerView: 2, spaceBetween: 30, loop: true, navigation: { nextEl: '.cert-next', prevEl: '.cert-prev' }, pagination: { el: '.cert-pagination', clickable: true }, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
 
-      new Swiper('.certificate-swiper', {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        loop: true,
-        navigation: { nextEl: '.cert-next', prevEl: '.cert-prev' },
-        pagination: { el: '.cert-pagination', clickable: true },
-        breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-      });
+      // ===== PDF Modal =====
+      const modal = document.getElementById('pdfModal');
+      const iframe = document.getElementById('pdfFrame');
+      window.openPDF = pdfPath => { iframe.src = pdfPath; modal.style.display = 'flex'; };
+      document.getElementById('closeModal').onclick = () => { iframe.src = ''; modal.style.display = 'none'; };
+      modal.onclick = e => { if (e.target === modal) { iframe.src = ''; modal.style.display = 'none'; } };
 
-      async function fetchYouTube() {
-        const YOUTUBE_API_KEY = 'AIzaSyCv3PayEqOlPm8GajjfPrA7NShHhzhPXxs';
-        const CHANNEL_ID = 'UCr2rECPZXcqSfc11fMVSQiQ';
-        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=10`);
+      // ===== YouTube Lazy Load =====
+      const fetchYouTube = async () => {
+        const API_KEY = 'AIzaSyCv3PayEqOlPm8GajjfPrA7NShHhzhPXxs';
+        const CHANNEL = 'UCr2rECPZXcqSfc11fMVSQiQ';
+        const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL}&part=snippet,id&order=date&maxResults=5`);
         const data = await res.json();
         const wrapper = document.getElementById('youtube-wrapper');
         data.items.forEach(item => {
           if (item.id.kind === 'youtube#video') {
             const slide = document.createElement('div');
             slide.className = 'swiper-slide text-center';
-            slide.innerHTML = `
-            <iframe width="100%" height="215" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
-            <p>${item.snippet.title}</p>
-          `;
+            slide.innerHTML = `<div class="youtube-thumb" style="cursor:pointer;" onclick="this.innerHTML='<iframe width=100% height=215 src=https://www.youtube.com/embed/${item.id.videoId} frameborder=0 allowfullscreen></iframe>';">
+          <img src="${item.snippet.thumbnails.medium.url}" class="img-fluid rounded shadow" loading="lazy">
+          <p class="mt-2">${item.snippet.title}</p></div>`;
             wrapper.appendChild(slide);
           }
         });
-
-        new Swiper('.youtube-swiper', {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          loop: true,
-          navigation: { nextEl: '.yt-next', prevEl: '.yt-prev' },
-          pagination: { el: '.yt-pagination', clickable: true },
-          breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-        });
+        new Swiper('.youtube-swiper', { slidesPerView: 2, spaceBetween: 30, loop: true, navigation: { nextEl: '.yt-next', prevEl: '.yt-prev' }, pagination: { el: '.yt-pagination', clickable: true }, breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
       }
       fetchYouTube();
+    });
+  </script>
 
-      // ===== PDF Modal =====
-      const modal = document.getElementById('pdfModal');
-      const iframe = document.getElementById('pdfFrame');
-      const closeBtn = document.getElementById('closeModal');
-
-      function openPDF(pdfPath) {
-        iframe.src = pdfPath;
-        modal.style.display = 'flex';
-      }
-      closeBtn.onclick = () => { iframe.src = ''; modal.style.display = 'none'; };
-      modal.onclick = e => { if (e.target === modal) { iframe.src = ''; modal.style.display = 'none'; } };
-
-    </script>
-
-    <style>
-      /* ===== Certificate Hover Overlay ===== */
-      .cert-card {
-        position: relative;
-        cursor: pointer;
-      }
-
-      .cert-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        opacity: 0;
-        transition: 0.3s;
-        border-radius: .5rem;
-      }
-
-      .cert-card:hover .cert-overlay {
-        opacity: 1;
-      }
-
-      .cert-overlay i {
-        pointer-events: none;
-      }
-
-      .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .btn-close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 5px 10px;
-        background: red;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        z-index: 10;
-      }
-    </style>
-
-  </main>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0">
+  </script>
 
 
   <footer id="footer" class="footer dark-background">

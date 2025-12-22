@@ -1475,13 +1475,10 @@
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
 <!-- Gists Swiper Section -->
-<!-- Gists Swiper Section -->
 <section id="gists" class="services section">
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
-    <p>
-      Curated AI, ML, and research-focused code snippets from lectures, projects, and production-grade systems.
-    </p>
+    <p>Curated AI, ML, and research-focused code snippets from lectures, projects, and production-grade systems.</p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1502,14 +1499,13 @@
   </div>
 </section>
 
-<!-- CSS for Gist cards -->
 <style>
   #gists-container .service-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     padding: 20px;
     background-color: #fff;
-    text-align: center;
+    text-align: left; /* Left-aligned content */
   }
 
   #gists-container .service-item:hover {
@@ -1518,9 +1514,34 @@
   }
 
   #gists-container .service-item .icon {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #0d6efd;
     margin-bottom: 12px;
+  }
+
+  #gists-container .service-item .file-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  #gists-container .service-item .gist-description {
+    margin-bottom: 12px;
+    color: #495057;
+    font-size: 0.95rem;
+  }
+
+  #gists-container .service-item pre {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  #gists-container .service-item .small {
+    font-size: 0.85rem;
+    color: #6c757d;
   }
 
   #gists-container .service-item .card-links a {
@@ -1533,83 +1554,82 @@
   #gists-container .service-item .card-links a:hover {
     color: #0056b3;
   }
-
-  #gists-container .service-item .small {
-    font-size: 0.85rem;
-    color: #6c757d;
-  }
 </style>
 
-<!-- JS for fetching and displaying Gists -->
 <script>
-  fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
-    .then(res => res.json())
-    .then(gists => {
-      const wrapper = document.getElementById('gists-container');
-      wrapper.innerHTML = '';
+fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
+.then(res => res.json())
+.then(gists => {
+  const wrapper = document.getElementById('gists-container');
+  wrapper.innerHTML = '';
 
-      gists.slice(0, 15).forEach(gist => {
-        const file = Object.values(gist.files)[0];
-        const language = file?.language || 'Markdown';
+  gists.slice(0, 15).forEach(gist => {
+    const fileObj = Object.values(gist.files)[0];
+    const fileName = fileObj.filename.split('.').slice(0, -1).join('.');
+    const extension = fileObj.filename.split('.').pop();
+    const language = fileObj.language || extension || 'Markdown';
+    const codeContent = fileObj.content || '';
 
-        const iconMap = {
-          Python: 'bi-filetype-py',
-          JavaScript: 'bi-filetype-js',
-          TypeScript: 'bi-filetype-ts',
-          Dart: 'bi-phone',
-          HTML: 'bi-filetype-html',
-          CSS: 'bi-filetype-css',
-          Markdown: 'bi-journal-text',
-          Jupyter: 'bi-file-earmark-richtext',
-          SQL: 'bi-filetype-sql'
-        };
-        const icon = iconMap[language] || 'bi-code-slash';
+    const iconMap = {
+      Python: 'bi-filetype-py',
+      JavaScript: 'bi-filetype-js',
+      TypeScript: 'bi-filetype-ts',
+      Dart: 'bi-phone',
+      HTML: 'bi-filetype-html',
+      CSS: 'bi-filetype-css',
+      Markdown: 'bi-journal-text',
+      Jupyter: 'bi-file-earmark-richtext',
+      SQL: 'bi-filetype-sql'
+    };
+    const icon = iconMap[language] || 'bi-code-slash';
 
-        const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
-          day: '2-digit',
-          month: 'short',
-          year: 'numeric'
-        });
+    const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    });
 
-        const slideHTML = `
-          <div class="swiper-slide">
-            <div class="service-item h-100">
-              <div class="icon">
-                <i class="bi ${icon}"></i>
-              </div>
-              <h3>${gist.description || 'Untitled Snippet'}</h3>
+    const slideHTML = `
+      <div class="swiper-slide">
+        <div class="service-item h-100">
+          <div class="icon"><i class="bi ${icon}"></i></div>
 
-              <div class="d-flex align-items-center justify-content-center mt-3 mb-2">
-                <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
-                <div class="small">
-                  <strong>Syed Muhammad Arsalan Shah</strong><br>
-                  <span class="text-muted">Last updated ${updatedDate}</span>
-                </div>
-              </div>
+          <div class="file-title">${fileName}.${extension}</div>
+          <div class="gist-description">${gist.description || ''}</div>
 
-              <div class="card-links mt-2">
-                <a href="${gist.html_url}" target="_blank" class="link-item">
-                  View on GitHub <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+          <pre>${codeContent.substring(0, 300)}${codeContent.length > 300 ? '...' : ''}</pre>
+
+          <div class="d-flex align-items-center mt-3 mb-2">
+            <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
+            <div class="small">
+              <strong>Syed Muhammad Arsalan Shah</strong><br>
+              <span class="text-muted">Last updated ${updatedDate}</span>
             </div>
           </div>
-        `;
 
-        wrapper.insertAdjacentHTML('beforeend', slideHTML);
-      });
+          <div class="card-links mt-2">
+            <a href="${gist.html_url}" target="_blank" class="link-item">
+              View on GitHub <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    wrapper.insertAdjacentHTML('beforeend', slideHTML);
+  });
 
-      new Swiper('.gists-swiper', {
-        loop: true,
-        speed: 600,
-        autoplay: { delay: 5000 },
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
-      });
-    })
-    .catch(err => console.error('Gists Swiper Error:', err));
+  new Swiper('.gists-swiper', {
+    loop: true,
+    speed: 600,
+    autoplay: { delay: 5000 },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
+  });
+
+})
+.catch(err => console.error('Gists Swiper Error:', err));
 </script>
 
 

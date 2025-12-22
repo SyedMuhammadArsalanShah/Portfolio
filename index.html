@@ -1478,8 +1478,8 @@
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Executable knowledge artifacts derived from real lectures, research explorations,
-      and production-grade software systems.
+      Executable knowledge artifacts derived from AI, research explorations, blog insights,
+      lectures, and production-grade software systems.
     </p>
   </div>
 
@@ -1509,27 +1509,35 @@
 
 <!-- Gists Swiper CSS -->
 <style>
-  /* Service Item Card Hover Effect */
   #gists-container .service-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
-    padding: 20px;
+    padding: 22px;
     background-color: #fff;
   }
 
   #gists-container .service-item:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
   }
 
-  /* Icon Styling */
   #gists-container .service-item .icon {
-    font-size: 2.2rem;
-    color: #0d6efd; /* primary blue accent */
-    margin-bottom: 12px;
+    font-size: 2.4rem;
+    color: #0d6efd;
+    margin-bottom: 14px;
   }
 
-  /* Card Links */
+  #gists-container .service-item h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  #gists-container .service-item p {
+    font-size: 0.95rem;
+    color: #495057;
+    line-height: 1.4;
+  }
+
   #gists-container .service-item .card-links a {
     text-decoration: none;
     font-weight: 500;
@@ -1541,7 +1549,6 @@
     color: #0056b3;
   }
 
-  /* Author Section */
   #gists-container .service-item .small {
     font-size: 0.85rem;
     color: #6c757d;
@@ -1556,7 +1563,6 @@
       const wrapper = document.getElementById('gists-container');
       wrapper.innerHTML = '';
 
-      // Show first 15 gists
       gists.slice(0, 15).forEach(gist => {
         const file = Object.values(gist.files)[0];
 
@@ -1569,18 +1575,22 @@
           Dart: 'bi-phone',
           HTML: 'bi-filetype-html',
           CSS: 'bi-filetype-css',
-          Markdown: 'bi-filetype-md'
+          Markdown: 'bi-journal-text',  // blog/research feel
+          Jupyter: 'bi-file-earmark-richtext',
+          SQL: 'bi-filetype-sql'
         };
         const icon = iconMap[language] || 'bi-code-slash';
 
-        // Last updated date formatting
+        // Content description
+        const desc = gist.description || 'AI, Blog & Research snippet derived from lectures, projects, and production systems.';
+
+        // Last updated date
         const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
           day: '2-digit',
           month: 'short',
           year: 'numeric'
         });
 
-        // Swiper slide
         const slideHTML = `
           <div class="swiper-slide">
             <div class="service-item h-100">
@@ -1589,14 +1599,10 @@
                 <i class="bi ${icon}"></i>
               </div>
 
-              <h3>${gist.description || 'Untitled Markdown Snippet'}</h3>
+              <h3>${gist.description || 'Untitled AI/Research Snippet'}</h3>
 
-              <p>
-                ${language}-based technical snippet derived from lectures,
-                research, or production systems.
-              </p>
+              <p>${desc}</p>
 
-              <!-- Author + Date -->
               <div class="d-flex align-items-center mt-3 mb-2"
                    style="border-top:1px solid rgba(0,0,0,0.08); padding-top:12px;">
                 <img src="${gist.owner.avatar_url}" 
@@ -1623,7 +1629,7 @@
       });
 
       // Initialize Swiper
-      const swiper = new Swiper('.gists-swiper', {
+      new Swiper('.gists-swiper', {
         loop: true,
         speed: 600,
         autoplay: { delay: 5000 },

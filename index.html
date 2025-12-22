@@ -1472,7 +1472,64 @@
         })
         .catch(error => console.error('Error loading courses:', error));
     </script>
+<!-- Code Gists Section -->
+<section id="gists" class="gists section light-background">
+  <div class="container">
 
+    <!-- Section Header -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-heading">Technical Code Gists & Teaching Snippets</h2>
+      <p class="section-subtitle">
+        A curated collection of practical, reusable code snippets used in my lectures,
+        research experiments, and real-world software systems.
+      </p>
+    </div>
+
+    <!-- Gists Grid -->
+    <div class="row g-4" id="gists-container"></div>
+
+    <!-- GitHub CTA -->
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
+        class="btn premium-github-btn">
+        <i class="bi bi-code-slash me-2"></i>
+        View All Gists on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
+    .then(res => res.json())
+    .then(gists => {
+      const container = document.getElementById('gists-container');
+
+      // show only latest 6 gists
+      gists.slice(0, 6).forEach(gist => {
+        const files = Object.values(gist.files);
+        const language = files[0]?.language || 'Code';
+
+        const card = document.createElement('div');
+        card.className = 'col-md-6 col-lg-4';
+        card.innerHTML = `
+          <div class="course-card h-100" data-aos="fade-up">
+            <h5 class="mb-2">${gist.description || 'Untitled Gist'}</h5>
+            <p class="text-muted small mb-3">
+              ${language} • Updated ${new Date(gist.updated_at).toLocaleDateString()}
+            </p>
+            <a href="${gist.html_url}" target="_blank"
+              class="btn btn-sm btn-outline-primary">
+              View Gist
+            </a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(err => console.error('Failed to load gists:', err));
+</script>
 
 
 

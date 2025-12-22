@@ -1474,27 +1474,25 @@
     </script>
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
-<!-- Gists Swiper Section -->
-<!-- Gists Swiper Section -->
 <section id="gists" class="services section">
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Curated AI, ML, and research-focused code snippets from lectures, projects, and production-grade systems.
+      Curated AI, ML, and research-focused code artifacts from lectures,
+      experiments, and production systems.
     </p>
   </div>
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up">
     <div class="swiper gists-swiper">
-      <div class="swiper-wrapper" id="gists-container">
-        <!-- Gist slides injected here -->
-      </div>
+      <div class="swiper-wrapper" id="gists-container"></div>
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- CTA -->
-    <div class="text-center mt-5" data-aos="fade-up">
-      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank" class="btn premium-github-btn">
+    <div class="text-center mt-5">
+      <a href="https://gist.github.com/SyedMuhammadArsalanShah"
+         target="_blank"
+         class="btn premium-github-btn">
         <i class="bi bi-journal-code me-2"></i>
         Explore Full Gist Library
       </a>
@@ -1502,125 +1500,110 @@
   </div>
 </section>
 
-<!-- CSS for Gist cards -->
+<!-- EMBED CONTAINER -->
+<section id="gist-embed-area" class="container mt-5" style="display:none;">
+  <h3 class="mb-3" id="embed-title"></h3>
+  <div id="gist-embed"></div>
+</section>
+
+<!-- STYLES -->
 <style>
-  #gists-container .service-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-  }
-
-  #gists-container .service-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-  }
-
-  #gists-container .service-item .icon {
-    font-size: 2.2rem;
-    color: #0d6efd;
-    margin-bottom: 12px;
-  }
-
-  #gists-container .service-item .card-links a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #0d6efd;
-    transition: color 0.3s ease;
-  }
-
-  #gists-container .service-item .card-links a:hover {
-    color: #0056b3;
-  }
-
-  #gists-container .service-item .small {
-    font-size: 0.85rem;
-    color: #6c757d;
-  }
-
-  #gists-container .service-item p {
-    font-size: 0.95rem;
-    margin-top: 4px;
-    color: #343a40;
-  }
+#gists-container .service-item{
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  height:100%;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+  transition:.3s;
+  text-align:center;
+}
+#gists-container .service-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 30px rgba(0,0,0,.15);
+}
+#gists-container h3{
+  font-size:1.05rem;
+  font-weight:600;
+  line-height:1.4;
+  word-break:break-word;
+}
+.gist-actions{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:14px;
+}
+#gist-embed-area{
+  background:#f8f9fa;
+  padding:20px;
+  border-radius:12px;
+}
 </style>
 
-<!-- JS for fetching and displaying Gists -->
+<!-- SCRIPT -->
 <script>
-  fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
-    .then(res => res.json())
-    .then(gists => {
-      const wrapper = document.getElementById('gists-container');
-      wrapper.innerHTML = '';
+fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
+.then(res=>res.json())
+.then(gists=>{
+  const wrap=document.getElementById('gists-container');
+  wrap.innerHTML='';
 
-      gists.slice(0, 15).forEach(gist => {
-        const file = Object.values(gist.files)[0];
-        let fileName = file?.filename || 'Untitled';
-        const language = file?.language || 'Markdown';
+  gists.slice(0,15).forEach(g=>{
+    const file=Object.values(g.files)[0];
+    const title=file.filename.replace(/\.[^/.]+$/,'');
+    const date=new Date(g.updated_at).toLocaleDateString('en-GB',{
+      day:'2-digit',month:'short',year:'numeric'
+    });
 
-        // Remove extension from title
-        const title = fileName.replace(/\.[^/.]+$/, '');
+    wrap.insertAdjacentHTML('beforeend',`
+      <div class="swiper-slide">
+        <div class="service-item">
+          <h3>${title}</h3>
+          <p class="small text-muted">Last updated ${date}</p>
 
-        const iconMap = {
-          Python: 'bi-filetype-py',
-          JavaScript: 'bi-filetype-js',
-          TypeScript: 'bi-filetype-ts',
-          Dart: 'bi-phone',
-          HTML: 'bi-filetype-html',
-          CSS: 'bi-filetype-css',
-          Markdown: 'bi-journal-text',
-          Jupyter: 'bi-file-earmark-richtext',
-          SQL: 'bi-filetype-sql'
-        };
-        const icon = iconMap[language] || 'bi-code-slash';
+          <div class="gist-actions">
+            <button class="btn btn-outline-primary"
+              onclick="embedGist('${g.id}','${title}')">
+              <i class="bi bi-eye"></i> View Embedded Code
+            </button>
 
-        const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
-          day: '2-digit',
-          month: 'short',
-          year: 'numeric'
-        });
-
-        const slideHTML = `
-          <div class="swiper-slide">
-            <div class="service-item h-100">
-              <div class="icon">
-                <i class="bi ${icon}"></i>
-              </div>
-              <h3>${title}</h3>
-              <p>${gist.description || 'Technical snippet derived from AI / Research / Lectures'}</p>
-
-              <div class="d-flex align-items-center justify-content-center mt-3 mb-2">
-                <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
-                <div class="small">
-                  <strong>Syed Muhammad Arsalan Shah</strong><br>
-                  <span class="text-muted">Last updated ${updatedDate}</span>
-                </div>
-              </div>
-
-              <div class="card-links mt-2">
-                <a href="${gist.html_url}" target="_blank" class="link-item">
-                  View on GitHub <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
+            <a href="${g.html_url}" target="_blank"
+               class="btn btn-outline-secondary">
+              <i class="bi bi-github"></i> View on Gist
+            </a>
           </div>
-        `;
+        </div>
+      </div>
+    `);
+  });
 
-        wrapper.insertAdjacentHTML('beforeend', slideHTML);
-      });
+  new Swiper('.gists-swiper',{
+    loop:true,
+    autoplay:{delay:5000},
+    pagination:{el:'.swiper-pagination',clickable:true},
+    breakpoints:{
+      768:{slidesPerView:2},
+      992:{slidesPerView:3}
+    }
+  });
+});
 
-      new Swiper('.gists-swiper', {
-        loop: true,
-        speed: 600,
-        autoplay: { delay: 5000 },
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
-      });
-    })
-    .catch(err => console.error('Gists Swiper Error:', err));
+function embedGist(id,title){
+  const area=document.getElementById('gist-embed-area');
+  const box=document.getElementById('gist-embed');
+
+  document.getElementById('embed-title').innerText=title;
+  box.innerHTML='';
+
+  const script=document.createElement('script');
+  script.src=`https://gist.github.com/SyedMuhammadArsalanShah/${id}.js`;
+  script.async=true;
+
+  box.appendChild(script);
+  area.style.display='block';
+
+  area.scrollIntoView({behavior:'smooth'});
+}
 </script>
 
 

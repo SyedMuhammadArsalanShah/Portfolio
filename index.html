@@ -1474,23 +1474,26 @@
     </script>
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
+<!-- Gists Swiper Section -->
 <section id="gists" class="services section">
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Executable knowledge artifacts derived from AI experiments, research explorations, and production-grade projects.
+      Curated AI, ML, and research-focused code snippets from lectures, projects, and production-grade systems.
     </p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="swiper gists-swiper">
-      <div class="swiper-wrapper" id="gists-container"></div>
+      <div class="swiper-wrapper" id="gists-container">
+        <!-- Gist slides injected here -->
+      </div>
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- CTA -->
     <div class="text-center mt-5" data-aos="fade-up">
-      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
-         class="btn premium-github-btn">
+      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank" class="btn premium-github-btn">
         <i class="bi bi-journal-code me-2"></i>
         Explore Full Gist Library
       </a>
@@ -1498,44 +1501,25 @@
   </div>
 </section>
 
+<!-- CSS for Gist cards -->
 <style>
   #gists-container .service-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
-    padding: 22px;
+    padding: 20px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
   }
 
   #gists-container .service-item:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
   }
 
   #gists-container .service-item .icon {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: #0d6efd;
-    margin-bottom: 14px;
-  }
-
-  #gists-container .service-item h3 {
-    font-weight: 600;
-    margin-bottom: 10px;
-    min-height: 60px; /* uniform height */
-  }
-
-  #gists-container .service-item p {
-    font-size: 0.9rem;
-    color: #495057;
-    line-height: 1.4;
-    flex-grow: 1;
-  }
-
-  #gists-container .service-item .small {
-    font-size: 0.85rem;
-    color: #6c757d;
+    margin-bottom: 12px;
   }
 
   #gists-container .service-item .card-links a {
@@ -1548,8 +1532,14 @@
   #gists-container .service-item .card-links a:hover {
     color: #0056b3;
   }
+
+  #gists-container .service-item .small {
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
 </style>
 
+<!-- JS for fetching and displaying Gists -->
 <script>
   fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
     .then(res => res.json())
@@ -1559,8 +1549,8 @@
 
       gists.slice(0, 15).forEach(gist => {
         const file = Object.values(gist.files)[0];
-
         const language = file?.language || 'Markdown';
+
         const iconMap = {
           Python: 'bi-filetype-py',
           JavaScript: 'bi-filetype-js',
@@ -1574,9 +1564,6 @@
         };
         const icon = iconMap[language] || 'bi-code-slash';
 
-        // Short preview snippet
-        const contentPreview = file?.content?.slice(0, 120).replace(/\n/g, ' ') || '';
-
         const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
           day: '2-digit',
           month: 'short',
@@ -1586,20 +1573,13 @@
         const slideHTML = `
           <div class="swiper-slide">
             <div class="service-item h-100">
-
               <div class="icon">
                 <i class="bi ${icon}"></i>
               </div>
+              <h3>${gist.description || 'Untitled Snippet'}</h3>
 
-              <h3>${gist.description || 'Untitled AI/Research Snippet'}</h3>
-
-              <p>${contentPreview}...</p>
-
-              <div class="d-flex align-items-center mt-3 mb-2">
-                <img src="${gist.owner.avatar_url}" 
-                     class="rounded-circle me-2" 
-                     width="42" height="42" 
-                     alt="Syed Muhammad Arsalan Shah">
+              <div class="d-flex align-items-center justify-content-center mt-3 mb-2">
+                <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
                 <div class="small">
                   <strong>Syed Muhammad Arsalan Shah</strong><br>
                   <span class="text-muted">Last updated ${updatedDate}</span>
@@ -1611,7 +1591,6 @@
                   View on GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
-
             </div>
           </div>
         `;
@@ -1626,14 +1605,12 @@
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: { el: '.swiper-pagination', clickable: true },
-        breakpoints: {
-          768: { slidesPerView: 2 },
-          992: { slidesPerView: 3 }
-        }
+        breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
       });
     })
     .catch(err => console.error('Gists Swiper Error:', err));
 </script>
+
 
 
 

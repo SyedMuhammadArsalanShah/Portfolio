@@ -1475,6 +1475,7 @@
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
 <!-- Gists Swiper Section -->
+<!-- Gists Swiper Section -->
 <section id="gists" class="services section">
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
@@ -1503,17 +1504,12 @@
 
 <!-- CSS for Gist cards -->
 <style>
-  /* Swiper card */
   #gists-container .service-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     padding: 20px;
     background-color: #fff;
-    text-align: left;
-    min-height: 320px;
+    text-align: center;
   }
 
   #gists-container .service-item:hover {
@@ -1527,60 +1523,20 @@
     margin-bottom: 12px;
   }
 
-  #gists-container .service-item h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 6px;
-    word-wrap: break-word;
-  }
-
-  #gists-container .service-item p {
-    font-size: 0.95rem;
-    color: #343a40;
-    flex-grow: 1;
-  }
-
-  #gists-container .service-item .author-section {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    padding-top: 10px;
-    margin-top: 10px;
-  }
-
-  #gists-container .service-item .author-section img {
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    margin-right: 10px;
-  }
-
-  #gists-container .service-item .author-section .small {
-    font-size: 0.85rem;
-    color: #6c757d;
-  }
-
   #gists-container .service-item .card-links a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background-color: #0d6efd;
-    color: #fff;
-    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
-    transition: background 0.3s ease;
+    color: #0d6efd;
+    transition: color 0.3s ease;
   }
 
   #gists-container .service-item .card-links a:hover {
-    background-color: #0056b3;
+    color: #0056b3;
   }
 
-  /* Responsive fix for small screens */
-  @media (max-width: 576px) {
-    #gists-container .service-item {
-      min-height: auto;
-    }
+  #gists-container .service-item .small {
+    font-size: 0.85rem;
+    color: #6c757d;
   }
 </style>
 
@@ -1594,11 +1550,7 @@
 
       gists.slice(0, 15).forEach(gist => {
         const file = Object.values(gist.files)[0];
-        let fileName = file?.filename || 'Untitled';
         const language = file?.language || 'Markdown';
-
-        // Remove extension from title
-        const title = fileName.replace(/\.[^/.]+$/, '');
 
         const iconMap = {
           Python: 'bi-filetype-py',
@@ -1625,20 +1577,19 @@
               <div class="icon">
                 <i class="bi ${icon}"></i>
               </div>
-              <h3>${title}</h3>
-              <p>${gist.description || 'Technical snippet derived from AI, ML, or research projects.'}</p>
+              <h3>${gist.description || 'Untitled Snippet'}</h3>
 
-              <div class="author-section">
-                <img src="${gist.owner.avatar_url}" alt="Syed Muhammad Arsalan Shah">
+              <div class="d-flex align-items-center justify-content-center mt-3 mb-2">
+                <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
                 <div class="small">
                   <strong>Syed Muhammad Arsalan Shah</strong><br>
-                  <span>Last updated ${updatedDate}</span>
+                  <span class="text-muted">Last updated ${updatedDate}</span>
                 </div>
               </div>
 
-              <div class="card-links">
-                <a href="${gist.html_url}" target="_blank">
-                  View on GitHub
+              <div class="card-links mt-2">
+                <a href="${gist.html_url}" target="_blank" class="link-item">
+                  View on GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>

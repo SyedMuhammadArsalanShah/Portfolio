@@ -1475,6 +1475,7 @@
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
 <!-- Gists Swiper Section -->
+<!-- Gists Swiper Section -->
 <section id="gists" class="services section">
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
@@ -1537,6 +1538,12 @@
     font-size: 0.85rem;
     color: #6c757d;
   }
+
+  #gists-container .service-item p {
+    font-size: 0.95rem;
+    margin-top: 4px;
+    color: #343a40;
+  }
 </style>
 
 <!-- JS for fetching and displaying Gists -->
@@ -1549,7 +1556,11 @@
 
       gists.slice(0, 15).forEach(gist => {
         const file = Object.values(gist.files)[0];
+        let fileName = file?.filename || 'Untitled';
         const language = file?.language || 'Markdown';
+
+        // Remove extension from title
+        const title = fileName.replace(/\.[^/.]+$/, '');
 
         const iconMap = {
           Python: 'bi-filetype-py',
@@ -1576,7 +1587,8 @@
               <div class="icon">
                 <i class="bi ${icon}"></i>
               </div>
-              <h3>${gist.description || 'Untitled Snippet'}</h3>
+              <h3>${title}</h3>
+              <p>${gist.description || 'Technical snippet derived from AI / Research / Lectures'}</p>
 
               <div class="d-flex align-items-center justify-content-center mt-3 mb-2">
                 <img src="${gist.owner.avatar_url}" class="rounded-circle me-2" width="42" height="42" alt="Syed Muhammad Arsalan Shah">
@@ -1610,6 +1622,7 @@
     })
     .catch(err => console.error('Gists Swiper Error:', err));
 </script>
+
 
 
 

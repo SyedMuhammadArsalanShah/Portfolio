@@ -1474,50 +1474,38 @@
     </script>
 <!-- Code Gists Section -->
 <!-- Technical Gists Section -->
-<div class="container" data-aos="fade-up" data-aos-delay="100">
+<section id="gists" class="services section">
+  <div class="container section-title">
+    <h2>Technical Gists & Research Snippets</h2>
+    <p>
+      Executable knowledge artifacts derived from real lectures, research explorations,
+      and production-grade software systems.
+    </p>
+  </div>
 
-  <div class="swiper gists-swiper init-swiper">
-    <script type="application/json" class="swiper-config">
-      {
-        "loop": true,
-        "speed": 600,
-        "autoplay": {
-          "delay": 5000
-        },
-        "slidesPerView": 1,
-        "spaceBetween": 30,
-        "pagination": {
-          "el": ".swiper-pagination",
-          "clickable": true
-        },
-        "breakpoints": {
-          "768": {
-            "slidesPerView": 2
-          },
-          "992": {
-            "slidesPerView": 3
-          }
-        }
-      }
-    </script>
-
-    <div class="swiper-wrapper" id="gists-container">
-      <!-- Gist slides injected here -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+    <!-- Swiper Wrapper -->
+    <div class="swiper gists-swiper">
+      <div class="swiper-wrapper" id="gists-container">
+        <!-- Gists slides will be injected here by JS -->
+      </div>
+      
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <div class="swiper-pagination"></div>
-  </div>
+    <!-- CTA Button -->
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
+         class="btn premium-github-btn">
+        <i class="bi bi-journal-code me-2"></i>
+        Explore Full Gist Library
+      </a>
+    </div>
 
-  <!-- CTA -->
-  <div class="text-center mt-5" data-aos="fade-up">
-    <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
-       class="btn premium-github-btn">
-      <i class="bi bi-journal-code me-2"></i>
-      Explore Full Gist Library
-    </a>
   </div>
-
-</div>
+</section>
 
 <!-- Gists Swiper CSS -->
 <style>

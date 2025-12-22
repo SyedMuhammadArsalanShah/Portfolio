@@ -1479,21 +1479,21 @@
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Executable knowledge artifacts derived from lectures, research explorations, and production-grade software.
+      Curated AI, ML, and research-focused code snippets from lectures, projects, and production-grade systems.
     </p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="swiper gists-swiper">
       <div class="swiper-wrapper" id="gists-container">
-        <!-- Gists dynamically injected here -->
+        <!-- Gist slides injected here -->
       </div>
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- CTA -->
     <div class="text-center mt-5" data-aos="fade-up">
-      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
-         class="btn premium-github-btn">
+      <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank" class="btn premium-github-btn">
         <i class="bi bi-journal-code me-2"></i>
         Explore Full Gist Library
       </a>
@@ -1501,127 +1501,166 @@
   </div>
 </section>
 
-
-
 <!-- CSS for Gist cards -->
 <style>
-#GistsSwiper .service-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  padding: 20px;
-  background-color: #fff;
-}
+  /* Swiper card */
+  #gists-container .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+    min-height: 320px;
+  }
 
-#GistsSwiper .service-item:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-}
+  #gists-container .service-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  }
 
-#GistsSwiper .service-item .icon {
-  font-size: 2.2rem;
-  color: #0d6efd;
-  margin-bottom: 12px;
-}
+  #gists-container .service-item .icon {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    margin-bottom: 12px;
+  }
 
-#GistsSwiper .service-item .author-section img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
+  #gists-container .service-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    word-wrap: break-word;
+  }
 
-#GistsSwiper .service-item .btn {
-  font-size: 0.875rem;
-}
+  #gists-container .service-item p {
+    font-size: 0.95rem;
+    color: #343a40;
+    flex-grow: 1;
+  }
+
+  #gists-container .service-item .author-section {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  #gists-container .service-item .author-section img {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+  }
+
+  #gists-container .service-item .author-section .small {
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+
+  #gists-container .service-item .card-links a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+
+  #gists-container .service-item .card-links a:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive fix for small screens */
+  @media (max-width: 576px) {
+    #gists-container .service-item {
+      min-height: auto;
+    }
+  }
 </style>
-
 
 <!-- JS for fetching and displaying Gists -->
 <script>
-fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
-  .then(res => res.json())
-  .then(gists => {
-    const container = document.getElementById('gists-container');
-    container.innerHTML = '';
+  fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
+    .then(res => res.json())
+    .then(gists => {
+      const wrapper = document.getElementById('gists-container');
+      wrapper.innerHTML = '';
 
-    gists.slice(0, 15).forEach(gist => {
-      const file = Object.values(gist.files)[0];
-      const language = file?.language || 'Markdown';
-      const title = file?.filename?.split('.').slice(0, -1).join('.') || 'Untitled';
-      const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
-        day: '2-digit', month: 'short', year: 'numeric'
-      });
+      gists.slice(0, 15).forEach(gist => {
+        const file = Object.values(gist.files)[0];
+        let fileName = file?.filename || 'Untitled';
+        const language = file?.language || 'Markdown';
 
-      const slide = `
-        <div class="swiper-slide">
-          <div class="service-item">
+        // Remove extension from title
+        const title = fileName.replace(/\.[^/.]+$/, '');
 
-            <div class="icon">
-              <i class="bi bi-code-slash"></i>
-            </div>
+        const iconMap = {
+          Python: 'bi-filetype-py',
+          JavaScript: 'bi-filetype-js',
+          TypeScript: 'bi-filetype-ts',
+          Dart: 'bi-phone',
+          HTML: 'bi-filetype-html',
+          CSS: 'bi-filetype-css',
+          Markdown: 'bi-journal-text',
+          Jupyter: 'bi-file-earmark-richtext',
+          SQL: 'bi-filetype-sql'
+        };
+        const icon = iconMap[language] || 'bi-code-slash';
 
-            <h3>${title}</h3>
+        const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
+          day: '2-digit',
+          month: 'short',
+          year: 'numeric'
+        });
 
-            <p>${language}-based technical snippet derived from lectures, research, or production systems.</p>
+        const slideHTML = `
+          <div class="swiper-slide">
+            <div class="service-item h-100">
+              <div class="icon">
+                <i class="bi ${icon}"></i>
+              </div>
+              <h3>${title}</h3>
+              <p>${gist.description || 'Technical snippet derived from AI, ML, or research projects.'}</p>
 
-            <div class="author-section d-flex align-items-center mt-3 mb-2">
-              <img src="${gist.owner.avatar_url}" alt="Syed Muhammad Arsalan Shah">
-              <div class="small">
-                <strong>Syed Muhammad Arsalan Shah</strong><br>
-                Updated ${updatedDate}
+              <div class="author-section">
+                <img src="${gist.owner.avatar_url}" alt="Syed Muhammad Arsalan Shah">
+                <div class="small">
+                  <strong>Syed Muhammad Arsalan Shah</strong><br>
+                  <span>Last updated ${updatedDate}</span>
+                </div>
+              </div>
+
+              <div class="card-links">
+                <a href="${gist.html_url}" target="_blank">
+                  View on GitHub
+                </a>
               </div>
             </div>
-
-            <div class="d-flex gap-2 mt-3">
-              <a href="${gist.html_url}" target="_blank"
-                 class="btn btn-outline-primary btn-sm w-50">
-                 View on Gist
-              </a>
-              <button class="btn btn-primary btn-sm w-50"
-                      onclick="toggleCode('${gist.id}')">
-                 View Code
-              </button>
-            </div>
-
-            <div id="gist-${gist.id}" class="gist-embed" style="display:none"></div>
           </div>
-        </div>
-      `;
+        `;
 
-      container.insertAdjacentHTML('beforeend', slide);
-    });
+        wrapper.insertAdjacentHTML('beforeend', slideHTML);
+      });
 
-    new Swiper('.gists-swiper', {
-      loop: true,
-      speed: 600,
-      autoplay: { delay: 5000 },
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: { el: '.swiper-pagination', clickable: true },
-      breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
-    });
-  })
-  .catch(err => console.error('Gist API Error:', err));
-
-function toggleCode(gistId) {
-  const container = document.getElementById(`gist-${gistId}`);
-
-  if (container.style.display === 'block') {
-    container.style.display = 'none';
-    return;
-  }
-
-  container.style.display = 'block';
-
-  if (!container.dataset.loaded) {
-    const script = document.createElement('script');
-    script.src = `https://gist.github.com/SyedMuhammadArsalanShah/${gistId}.js`;
-    script.async = true;
-    container.appendChild(script);
-    container.dataset.loaded = 'true';
-  }
-}
+      new Swiper('.gists-swiper', {
+        loop: true,
+        speed: 600,
+        autoplay: { delay: 5000 },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        breakpoints: { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } }
+      });
+    })
+    .catch(err => console.error('Gists Swiper Error:', err));
 </script>
+
 
 
 

@@ -1478,24 +1478,16 @@
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Executable knowledge artifacts derived from AI, research explorations, blog insights,
-      lectures, and production-grade software systems.
+      Executable knowledge artifacts derived from AI experiments, research explorations, and production-grade projects.
     </p>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-    <!-- Swiper Wrapper -->
     <div class="swiper gists-swiper">
-      <div class="swiper-wrapper" id="gists-container">
-        <!-- Gists slides will be injected here by JS -->
-      </div>
-      
-      <!-- Pagination -->
+      <div class="swiper-wrapper" id="gists-container"></div>
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- CTA Button -->
     <div class="text-center mt-5" data-aos="fade-up">
       <a href="https://gist.github.com/SyedMuhammadArsalanShah" target="_blank"
          class="btn premium-github-btn">
@@ -1503,17 +1495,18 @@
         Explore Full Gist Library
       </a>
     </div>
-
   </div>
 </section>
 
-<!-- Gists Swiper CSS -->
 <style>
   #gists-container .service-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     padding: 22px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   #gists-container .service-item:hover {
@@ -1530,12 +1523,19 @@
   #gists-container .service-item h3 {
     font-weight: 600;
     margin-bottom: 10px;
+    min-height: 60px; /* uniform height */
   }
 
   #gists-container .service-item p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #495057;
     line-height: 1.4;
+    flex-grow: 1;
+  }
+
+  #gists-container .service-item .small {
+    font-size: 0.85rem;
+    color: #6c757d;
   }
 
   #gists-container .service-item .card-links a {
@@ -1548,14 +1548,8 @@
   #gists-container .service-item .card-links a:hover {
     color: #0056b3;
   }
-
-  #gists-container .service-item .small {
-    font-size: 0.85rem;
-    color: #6c757d;
-  }
 </style>
 
-<!-- Gists Swiper JS -->
 <script>
   fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
     .then(res => res.json())
@@ -1566,7 +1560,6 @@
       gists.slice(0, 15).forEach(gist => {
         const file = Object.values(gist.files)[0];
 
-        // Language & Icon mapping
         const language = file?.language || 'Markdown';
         const iconMap = {
           Python: 'bi-filetype-py',
@@ -1575,16 +1568,15 @@
           Dart: 'bi-phone',
           HTML: 'bi-filetype-html',
           CSS: 'bi-filetype-css',
-          Markdown: 'bi-journal-text',  // blog/research feel
+          Markdown: 'bi-journal-text',
           Jupyter: 'bi-file-earmark-richtext',
           SQL: 'bi-filetype-sql'
         };
         const icon = iconMap[language] || 'bi-code-slash';
 
-        // Content description
-        const desc = gist.description || 'AI, Blog & Research snippet derived from lectures, projects, and production systems.';
+        // Short preview snippet
+        const contentPreview = file?.content?.slice(0, 120).replace(/\n/g, ' ') || '';
 
-        // Last updated date
         const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
           day: '2-digit',
           month: 'short',
@@ -1601,10 +1593,9 @@
 
               <h3>${gist.description || 'Untitled AI/Research Snippet'}</h3>
 
-              <p>${desc}</p>
+              <p>${contentPreview}...</p>
 
-              <div class="d-flex align-items-center mt-3 mb-2"
-                   style="border-top:1px solid rgba(0,0,0,0.08); padding-top:12px;">
+              <div class="d-flex align-items-center mt-3 mb-2">
                 <img src="${gist.owner.avatar_url}" 
                      class="rounded-circle me-2" 
                      width="42" height="42" 
@@ -1615,9 +1606,9 @@
                 </div>
               </div>
 
-              <div class="card-links">
+              <div class="card-links mt-2">
                 <a href="${gist.html_url}" target="_blank" class="link-item">
-                  View Technical Artifact <i class="bi bi-arrow-right"></i>
+                  View on GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
 
@@ -1628,7 +1619,6 @@
         wrapper.insertAdjacentHTML('beforeend', slideHTML);
       });
 
-      // Initialize Swiper
       new Swiper('.gists-swiper', {
         loop: true,
         speed: 600,
@@ -1641,10 +1631,10 @@
           992: { slidesPerView: 3 }
         }
       });
-
     })
     .catch(err => console.error('Gists Swiper Error:', err));
 </script>
+
 
 
 

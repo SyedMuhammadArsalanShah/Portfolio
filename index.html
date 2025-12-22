@@ -1520,7 +1520,7 @@
 
         const icon = iconMap[language] || 'bi-code-slash';
 
-        const publishedDate = new Date(gist.created_at).toLocaleDateString('en-GB', {
+        const updatedDate = new Date(gist.updated_at).toLocaleDateString('en-GB', {
           day: '2-digit',
           month: 'short',
           year: 'numeric'
@@ -1532,11 +1532,11 @@
 
               <div class="icon"><i class="bi ${icon}"></i></div>
 
-              <h3>${gist.description || 'Untitled Research Snippet'}</h3>
+              <h3>${gist.description || 'Untitled Technical Snippet'}</h3>
 
               <p>
-                ${language}-based implementation derived from lectures,
-                research exploration, and production systems.
+                ${language}-based implementation actively maintained and
+                refined through teaching and production use.
               </p>
 
               <div class="d-flex align-items-center mt-3 mb-2"
@@ -1548,7 +1548,7 @@
 
                 <div class="small">
                   <strong>Syed Muhammad Arsalan Shah</strong><br>
-                  <span class="text-muted">Published ${publishedDate}</span>
+                  <span class="text-muted">Last updated ${updatedDate}</span>
                 </div>
               </div>
 
@@ -1567,6 +1567,7 @@
     })
     .catch(err => console.error('Gist Load Error:', err));
 </script>
+
 
 
 

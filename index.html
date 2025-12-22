@@ -1478,8 +1478,8 @@
   <div class="container section-title">
     <h2>Technical Gists & Research Snippets</h2>
     <p>
-      Curated AI, ML, and research-focused code artifacts from lectures,
-      experiments, and production systems.
+      AI, ML, and research-oriented executable knowledge artifacts
+      extracted from real lectures, experiments, and production systems.
     </p>
   </div>
 
@@ -1500,71 +1500,86 @@
   </div>
 </section>
 
-<!-- EMBED CONTAINER -->
-<section id="gist-embed-area" class="container mt-5" style="display:none;">
-  <h3 class="mb-3" id="embed-title"></h3>
-  <div id="gist-embed"></div>
-</section>
-
-<!-- STYLES -->
 <style>
 #gists-container .service-item{
   background:#fff;
   border-radius:14px;
   padding:22px;
   height:100%;
-  box-shadow:0 8px 22px rgba(0,0,0,.08);
+  box-shadow:0 10px 26px rgba(0,0,0,.08);
   transition:.3s;
-  text-align:center;
 }
 #gists-container .service-item:hover{
   transform:translateY(-6px);
-  box-shadow:0 14px 30px rgba(0,0,0,.15);
+  box-shadow:0 18px 36px rgba(0,0,0,.15);
 }
-#gists-container h3{
-  font-size:1.05rem;
-  font-weight:600;
-  line-height:1.4;
-  word-break:break-word;
+.gist-meta{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.gist-meta img{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+}
+.gist-meta .info{
+  font-size:.85rem;
+  color:#6c757d;
+  line-height:1.3;
 }
 .gist-actions{
   display:flex;
-  justify-content:center;
   gap:10px;
-  margin-top:14px;
+  margin-top:12px;
+  flex-wrap:wrap;
 }
-#gist-embed-area{
-  background:#f8f9fa;
-  padding:20px;
-  border-radius:12px;
+.gist-embed{
+  margin-top:18px;
+  display:none;
 }
 </style>
 
-<!-- SCRIPT -->
 <script>
 fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
-.then(res=>res.json())
-.then(gists=>{
-  const wrap=document.getElementById('gists-container');
-  wrap.innerHTML='';
+.then(res => res.json())
+.then(gists => {
+  const wrap = document.getElementById('gists-container');
+  wrap.innerHTML = '';
 
-  gists.slice(0,15).forEach(g=>{
-    const file=Object.values(g.files)[0];
-    const title=file.filename.replace(/\.[^/.]+$/,'');
-    const date=new Date(g.updated_at).toLocaleDateString('en-GB',{
-      day:'2-digit',month:'short',year:'numeric'
+  gists.slice(0,15).forEach((g, index) => {
+    const file = Object.values(g.files)[0];
+    const title = file.filename.replace(/\.[^/.]+$/, '');
+
+    const created = new Date(g.created_at).toLocaleDateString('en-GB',{
+      day:'2-digit', month:'short', year:'numeric'
+    });
+    const updated = new Date(g.updated_at).toLocaleDateString('en-GB',{
+      day:'2-digit', month:'short', year:'numeric'
     });
 
-    wrap.insertAdjacentHTML('beforeend',`
+    wrap.insertAdjacentHTML('beforeend', `
       <div class="swiper-slide">
         <div class="service-item">
-          <h3>${title}</h3>
-          <p class="small text-muted">Last updated ${date}</p>
 
+          <!-- AUTHOR META -->
+          <div class="gist-meta">
+            <img src="${g.owner.avatar_url}" alt="Syed Muhammad Arsalan Shah">
+            <div class="info">
+              <strong>Syed Muhammad Arsalan Shah</strong><br>
+              Created: ${created}<br>
+              Updated: ${updated}
+            </div>
+          </div>
+
+          <h3>${title}</h3>
+
+          <!-- ACTIONS -->
           <div class="gist-actions">
             <button class="btn btn-outline-primary"
-              onclick="embedGist('${g.id}','${title}')">
-              <i class="bi bi-eye"></i> View Embedded Code
+              onclick="toggleGist('${g.id}', ${index})">
+              <i class="bi bi-eye"></i> View Code
             </button>
 
             <a href="${g.html_url}" target="_blank"
@@ -1572,6 +1587,10 @@ fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
               <i class="bi bi-github"></i> View on Gist
             </a>
           </div>
+
+          <!-- INLINE GIST -->
+          <div class="gist-embed" id="gist-embed-${index}"></div>
+
         </div>
       </div>
     `);
@@ -1580,6 +1599,7 @@ fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
   new Swiper('.gists-swiper',{
     loop:true,
     autoplay:{delay:5000},
+    speed:600,
     pagination:{el:'.swiper-pagination',clickable:true},
     breakpoints:{
       768:{slidesPerView:2},
@@ -1588,21 +1608,21 @@ fetch('https://api.github.com/users/SyedMuhammadArsalanShah/gists')
   });
 });
 
-function embedGist(id,title){
-  const area=document.getElementById('gist-embed-area');
-  const box=document.getElementById('gist-embed');
+function toggleGist(id, index){
+  const el = document.getElementById(`gist-embed-${index}`);
 
-  document.getElementById('embed-title').innerText=title;
-  box.innerHTML='';
+  if(el.style.display === 'block'){
+    el.innerHTML = '';
+    el.style.display = 'none';
+    return;
+  }
 
-  const script=document.createElement('script');
-  script.src=`https://gist.github.com/SyedMuhammadArsalanShah/${id}.js`;
-  script.async=true;
-
-  box.appendChild(script);
-  area.style.display='block';
-
-  area.scrollIntoView({behavior:'smooth'});
+  el.innerHTML = '';
+  const s = document.createElement('script');
+  s.src = `https://gist.github.com/SyedMuhammadArsalanShah/${id}.js`;
+  s.async = true;
+  el.appendChild(s);
+  el.style.display = 'block';
 }
 </script>
 
